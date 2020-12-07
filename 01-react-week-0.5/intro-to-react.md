@@ -2,11 +2,13 @@
 
 ## Learning Goals
 
-- What is React?
-- Why do we learn React?
-- Who is using React?
-- Intro to the Virtual DOM
-- Intro to Components
+By the end of this lesson we will be able to...
+
+- Explain what is React in plain English?
+- Explain why we learn React at Ada?
+- Identify who is using React?
+- Describe at a high level the Virtual DOM
+- Describe the concept of a React Components
 
 ## What is React?
 
