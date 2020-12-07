@@ -43,7 +43,7 @@ React is made up of **Components** that work together. A very basic component ca
 
 ## Key Takeaway
 
-React is extremely popular right now and is growing in popularity. The Virtual DOM makes React a desirable solution for web applications where performance and modular are in consideration.
+React is extremely popular right now and is growing in popularity. React focuses on writing JavaScript functions which render and manage components of the user interface (webpage for React on websites).  The Virtual DOM makes React a desirable solution for web applications where performance and modular are in consideration.
 
 ## Additional Resources
 
