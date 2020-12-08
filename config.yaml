@@ -17,4 +17,7 @@ Standards:
         Type: Lesson
         UID: 75d2ae52-3b24-42d3-ae22-bb12548ce218
         Path: /01-react-week-0.5/intro-to-react.md
-  
+      - 
+        Type: Lesson
+        UID: 605b4d06-a7ca-4a09-bb3e-6106d6a6bde0
+        Path: /01-react-week-0.5/react-chatlog.md
