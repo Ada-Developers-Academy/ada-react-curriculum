@@ -64,7 +64,7 @@ PR Link
 
 ##### !answer
 
-^https:\/\/github\.com\/[^\/]+\/[^\/]+\/pull\/\d?\d[\/]?
+/^https:\/\/github\.com\/[^\/]+\/[^\/]+\/pull\/\d?\d[\/]?/
 
 ##### !end-answer
 
