@@ -17,4 +17,7 @@ Standards:
         Type: Lesson
         UID: 75d2ae52-3b24-42d3-ae22-bb12548ce218
         PATH: /01-react-week-0.5/intro-to-react.md
-  
+      -
+        Type: Checkpoint
+        UID: f5b7c553-ac24-4aea-b9e9-0b1c095d8731
+        PATH: /01-react-week-0.5/react-timeline.checkpoint.md
