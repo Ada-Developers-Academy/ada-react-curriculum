@@ -114,6 +114,71 @@ What else can we do? How far can we extend this? Everything else about JavaScrip
 - You can add as many classes as you want. If you want a div to have the two classes "content" and "profile", you can say `<div className='content profile'></div>`
 - You can make the value of `className` to be a variable. If you have a variable `let myClass = 'my-cool-class'`, you can say `<div className={myClass}></div>`
 - If you need to conditionally set some styles, you can do that through conditionally modifying a string! You'll have to set a variable to the correct value before returning JSX, because you can't do conditional logic in JSX
+check
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: checkbox
+* id: 4685acd7-9a7a-46c8-8560-29bbeafd3760
+* title: Troubleshooting Syntax
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+
+Fix the following code:
+```javascript
+const styling = {
+  color: 'dodgerblue',
+  marginTop: 10px,
+  border-radius: '0'
+}
+
+<div class={styling}> // this is JSX
+</div>
+```
+
+##### !end-question
+
+##### !options
+
+* All `styling` keys should have quotes
+* `borderRadius`
+* `'10px'`
+* `0`
+* `className={styling}`
+* `style={styling}`
+
+##### !end-options
+
+##### !answer
+
+* `borderRadius`
+* `'10px'`
+* `style={styling}`
+
+##### !end-answer
+
+<!--optional-->
+##### !hint
+
+##### !end-hint
+
+<!--optional, checkpoints only-->
+##### !rubric
+
+##### !end-rubric
+
+<!--optional-->
+##### !explanation
+
+##### !end-explanation
+
+### !end-challenge
+
+<!--END CHALLENGE-->
 
 ## Key Takeaway
 
