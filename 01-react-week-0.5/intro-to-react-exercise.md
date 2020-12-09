@@ -1,4 +1,4 @@
-# Intro to React
+# Intro to React Exercise
 
 Complete this worksheet with your neighbors. Some items are questions, some items are exercises to extend your hello world React application.
 
