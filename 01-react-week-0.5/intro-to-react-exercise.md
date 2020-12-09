@@ -159,20 +159,20 @@ In a React component you need to return a **single** element.  You can have othe
 
 This could be fixed with a div wrapping around the rest of the JSX:
 
-    ```JavaScript
-      function App() {
-        return (
-          <div>
-            <header>
-              <h1>Hello Neat Header</h1>
-            </header>
-            <p>
-              Welcome to my React application!
-          </p>
-          </div>
-        );
-      }
-    ```
+```JavaScript
+  function App() {
+    return (
+      <div>
+        <header>
+          <h1>Hello Neat Header</h1>
+        </header>
+        <p>
+          Welcome to my React application!
+        </p>
+      </div>
+    );
+  }
+```
 
 ##### !end-explanation
 
@@ -195,19 +195,19 @@ This could be fixed with a div wrapping around the rest of the JSX:
 
 Which of the two JSX code options should you choose? **Why?**
 
-    a.
+a.
 
-    ```javascript
-    <header class='main-header'>
-    </header>
-    ```
+```javascript
+<header class='main-header'>
+</header>
+```
 
-    b.
+b.
 
-    ```javascript
-    <header className='main-header'>
-    </header>
-    ```
+```javascript
+<header className='main-header'>
+</header>
+```
 ##### !end-question
 
 ##### !options
