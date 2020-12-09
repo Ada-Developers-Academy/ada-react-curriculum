@@ -157,7 +157,7 @@ What is wrong?
 
 In a React component you need to return a **single** element.  You can have other JSX inside that element, but you React requires you to return a single JSX element, which can contain other elements.
 
-This could be fixed with:
+This could be fixed with a div wrapping around the rest of the JSX:
 
     ```JavaScript
       function App() {
@@ -187,9 +187,9 @@ This could be fixed with:
 
 * type: multiple-choice
 * id: 4b66da45-d861-4ec6-b5e9-abea65a203a8
-* title: [text, a short question title]
-<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
-<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+* title: Which is proper JSX?
+* points: 1
+* topics: react
 
 ##### !question
 
