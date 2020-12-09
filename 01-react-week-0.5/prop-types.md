@@ -9,7 +9,7 @@ By the end of this lesson you should be able to:
 
 You may have noticed this message from your JavaScript linter.  "____ is missing from props validation (react/prop-types)."  The linter is indicating that it can't identify the fields of props.  You can help the linter out by using a feature of React called PropTypes in which you explicitly list the props a component takes and their types.
 
-![prop types error](images/prop-types.png)
+![prop types error](../images/prop-types.png)
 
 In this lesson we will define `propTypes` in our React components which will provide some type-checking and documentation of our React component props.
 
@@ -44,7 +44,7 @@ Wait a second - what's with that syntax? We just attached an attribute (`propTyp
 
 The above block defines two props. They both must be Strings. `email` is optional, but `fullName` is required to use a `Student` component. If you try to use the `Student` component without a `fullName` prop you will get this error message in your browswer's console:
 
-![Error Msg](images/missing-prop.png)
+![Error Msg](../images/missing-prop.png)
 
 If a component has optional props you can simply leave off the `isRequired` attribute.
 
