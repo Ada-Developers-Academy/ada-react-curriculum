@@ -124,18 +124,18 @@ or
 
 Why is the following react render function invalid?
 
-    ```JavaScript
-      function App() {
-        return (
-          <header>
-            <h1>Hello Neat Header</h1>
-          </header>
-          <p>
-            Welcome to my React application!
-          </p>
-        );
-      }
-    ```
+```JavaScript
+  function App() {
+    return (
+      <header>
+        <h1>Hello Neat Header</h1>
+      </header>
+      <p>
+        Welcome to my React application!
+      </p>
+    );
+  }
+```
 ##### !end-question
 
 ##### !placeholder
