@@ -18,6 +18,14 @@ Standards:
         UID: 75d2ae52-3b24-42d3-ae22-bb12548ce218
         Path: /01-react-week-0.5/intro-to-react.md
       -
+        Type: Lesson
+        UID: 872eea6b-7693-4d0b-80cf-52b64190f221
+        Path: /01-react-week-0.5/react-hello-world.md
+      -
+        Type: Lesson
+        UID: 4d2eec06-abe8-484a-9ef7-284e9e8afb6b
+        Path: /01-react-week-0.5/intro-to-react-exercise.md
+      -
         Type: Checkpoint
         UID: f5b7c553-ac24-4aea-b9e9-0b1c095d8731
         Path: /01-react-week-0.5/react-timeline.checkpoint.md
@@ -25,8 +33,4 @@ Standards:
         Type: Lesson
         UID: 605b4d06-a7ca-4a09-bb3e-6106d6a6bde0
         Path: /01-react-week-0.5/react-chatlog.md
-      -
-        Type: Lesson
-        UID: 872eea6b-7693-4d0b-80cf-52b64190f221
-        Path: /01-react-week-0.5/react-hello-world.md
-        
+  
