@@ -48,7 +48,8 @@ The above block defines two props. They both must be Strings. `email` is optiona
 
 If a component has optional props you can simply leave off the `isRequired` attribute.
 
-**Exercise** Add another prop to the `Student` component called `birthday`.  This component should be _optional_.  Update the `Student` class' `propTypes`.
+### Exercise
+Add another prop to the `Student` component called `birthday`.  This component should be _optional_.  Update the `Student` class' `propTypes`.
 
 <details>
   <summary>Potential Solution</summary>
@@ -129,7 +130,7 @@ Student.defaultProps = {
 A `defaultProp` attribute like above ensures that every time the given props have values, even if they are not provided.
 
 ## List of PropTypes
-| <div style="width:100px;">**Data Type**</div> | <div style="width:100%">**Description**</div>  |
+| <div style="width:110px;">**Data Type**</div> | <div style="width:100%">**Description**</div>  |
 | --------------- | -------- | 
 | `string`           | A String                                                                                                                                                                                                   |
 | `array`            | An Array                                                                                                                                                                                                   |

@@ -17,4 +17,8 @@ Standards:
         Type: Lesson
         UID: 75d2ae52-3b24-42d3-ae22-bb12548ce218
         Path: /01-react-week-0.5/intro-to-react.md
+      -
+        Type: Lesson
+        UID: 662445ed-976e-439e-b5ff-eecc746a7b57
+        Path: /01-react-week-0.5/prop-types.md
   
