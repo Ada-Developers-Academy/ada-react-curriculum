@@ -87,7 +87,7 @@ How do you start the local development server?
 
 ##### !answer
 
-/[(npm\s+start)(yarn\s+start)]/
+/(npm(\srun)?\s+start)|(yarn\s+start)/
 
 ##### !end-answer
 
