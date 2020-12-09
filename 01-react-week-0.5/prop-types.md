@@ -129,9 +129,8 @@ Student.defaultProps = {
 A `defaultProp` attribute like above ensures that every time the given props have values, even if they are not provided.
 
 ## List of PropTypes
-
-| **Data Type** | **Description**                                                                                                                                                                                            |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style="width:100px;">**Data Type**</div> | <div style="width:100%">**Description**</div>  |
+| --------------- | -------- | 
 | `string`           | A String                                                                                                                                                                                                   |
 | `array`            | An Array                                                                                                                                                                                                   |
 | `func`             | A function                                                                                                                                                                                                 |
