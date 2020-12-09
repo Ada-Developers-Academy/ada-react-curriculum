@@ -29,4 +29,8 @@ Standards:
         Type: Lesson
         UID: 872eea6b-7693-4d0b-80cf-52b64190f221
         Path: /01-react-week-0.5/react-hello-world.md
+      -
+        Type: Lesson
+        UID: 0cc1c803-945d-496d-ab5c-a43cd3786945
+        Path: /01-react-week-0.5/styling.md
         
