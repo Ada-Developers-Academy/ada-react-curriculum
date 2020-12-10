@@ -1,4 +1,4 @@
-# Passing data using `props`
+# Passing data using props
 
 ## Learning Goals
 
