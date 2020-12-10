@@ -228,7 +228,7 @@ export default App;
 
 Modify the `StudentCollection` component to use the `students` prop passed in.  Now the StudentCollection can be used with any array of student objects.
 
-If you have trouble you can see an example in our [examples folder](examples/StudentCollection.js).
+If you have trouble you can see [an example](studentColletion.resource.md).
 
 ## Key Takeaway
 
