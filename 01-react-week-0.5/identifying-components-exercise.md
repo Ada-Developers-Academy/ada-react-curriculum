@@ -28,7 +28,7 @@ Answer the following questions:
 
 ## Part Two: Make a List of Possible Components with CraigsList
 
-Take a look at [CraigsList](https://seattle.craigslist.org/).  Download this [screenshot](../images/craigslist-screenshot) or take your own.  Create a new [draw.io](http://www.draw.io) diagram  and import the screenshot (Arrange -> Insert -> Insert Image).  
+Take a look at [CraigsList](https://seattle.craigslist.org/).  Download this [screenshot](images/craigslist-screenshot) or take your own.  Create a new [draw.io](http://www.draw.io) diagram  and import the screenshot (Arrange -> Insert -> Insert Image).  
 
 Identify the visual "components" the website is comprised of, and outline and label the components that a React CraigsList would need like the MediaRanker screenshot above.
 
