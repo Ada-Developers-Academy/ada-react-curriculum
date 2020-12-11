@@ -19,24 +19,29 @@ In this worksheet the nested components are built using the basic components -- 
 
 ## Basic Components
 
-1. Create an **Avatar** component which takes an image URL and presents that image with a border.
+1.  Create an **Avatar** component which takes an image URL and presents that image with a border.
 
     Examples:
     ![Avatar component example](./images/example-component-avatar.png)
-1. Create a **Badge** component which takes a number and displays that number in a circle. Bonus: have the circle change color based on the value of the number (e.g. red if it's < 50, green otherwise).
+<br><br>
+
+2.  Create a **Badge** component which takes a number and displays that number in a circle. Bonus: have the circle change color based on the value of the number (e.g. red if it's < 50, green otherwise).
 
     Example (the badge is the part with the 88 or 888):
 
     ![Badge component example](./images/example-component-badge.png)
-1. Create a **Product** component, which takes a name, a product photo URL, a standard price, and a discount price. If the discounted price is less than the standard price then the component should display the discounted price with some visual indicator (e.g. the price text is red).
+<br><br>
+
+3.  Create a **Product** component, which takes a name, a product photo URL, a standard price, and a discount price. If the discounted price is less than the standard price then the component should display the discounted price with some visual indicator (e.g. the price text is red).
 
     Example:
 
     ![Product component example](./images/example-component-product.png)
+<br><br>
 
 ## Nested Components
 
-1. Create a **UserCard** component which takes a user object. The user object has properties for:
+4.  Create a **UserCard** component which takes a user object. The user object has properties for:
 
     - User name
     - Avatar image URL
@@ -47,11 +52,17 @@ In this worksheet the nested components are built using the basic components -- 
   
     Example:
     ![UserCard component example](./images/example-component-usercard.png)
+<br><br>
 
-1. Create a **ProductList** component which takes an array of product objects. Each product object has properties for:
+5.  Create a **ProductList** component which takes an array of product objects. Each product object has properties for:
     - Product name
     - Product image URL
     - Price
     - Discount price
 
     This component renders a list of individual Product components (from above). The list display is up to you (e.g. with a single product per row, or multiple products per row).
+<br><br>
+
+## Solution Examples
+
+Here is a CRA sandbox with component examples to check against your solutions! [Solutions Sandbox](https://codesandbox.io/s/ada-react-components-worksheet-xq7po)
