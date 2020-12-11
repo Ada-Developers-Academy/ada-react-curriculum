@@ -23,7 +23,7 @@ Standards:
         Path: /01-react-week-0.5/react-hello-world.md
       -
         Type: Lesson
-        UID: db0fe247-83d1-4634-887b-c0095cea2eee
+        UID: 4d2eec06-abe8-484a-9ef7-284e9e8afb6b
         Path: /01-react-week-0.5/intro-to-react-exercise.md
       -
         Type: Lesson
@@ -45,6 +45,10 @@ Standards:
         Type: Lesson
         UID: d81424ae-eab8-4971-9a94-94194cd4077f
         Path: /01-react-week-0.5/styling.md
+      -
+        Type: Lesson
+        UID: cb605a76-c770-477a-8b90-756b0a92c0d2
+        Path: /01-react-week-0.5/components-worksheet.md
       - 
         Type: Lesson
         UID: 605b4d06-a7ca-4a09-bb3e-6106d6a6bde0
@@ -53,8 +57,3 @@ Standards:
         Type: Checkpoint
         UID: f5b7c553-ac24-4aea-b9e9-0b1c095d8731
         Path: /01-react-week-0.5/react-timeline.checkpoint.md
-      -
-        Type: Lesson
-        UID: cb605a76-c770-477a-8b90-756b0a92c0d2
-        Path: /01-react-week-0.5/components-worksheet.md
-          
