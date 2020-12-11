@@ -53,5 +53,8 @@ Standards:
         Type: Checkpoint
         UID: f5b7c553-ac24-4aea-b9e9-0b1c095d8731
         Path: /01-react-week-0.5/react-timeline.checkpoint.md
-
+      -
+        Type: Lesson
+        UID: cb605a76-c770-477a-8b90-756b0a92c0d2
+        Path: /01-react-week-0.5/components-worksheet.md
           
