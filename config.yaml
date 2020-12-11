@@ -18,15 +18,38 @@ Standards:
         UID: 75d2ae52-3b24-42d3-ae22-bb12548ce218
         Path: /01-react-week-0.5/intro-to-react.md
       -
-        Type: Checkpoint
-        UID: f5b7c553-ac24-4aea-b9e9-0b1c095d8731
-        Path: /01-react-week-0.5/react-timeline.checkpoint.md
+        Type: Lesson
+        UID: 872eea6b-7693-4d0b-80cf-52b64190f221
+        Path: /01-react-week-0.5/react-hello-world.md
+      -
+        Type: Lesson
+        UID: 4d2eec06-abe8-484a-9ef7-284e9e8afb6b
+        Path: /01-react-week-0.5/intro-to-react-exercise.md
+      -
+        Type: Lesson
+        UID: c3bc749d-9384-42c4-b460-231831b3a5d2
+        Path: /01-react-week-0.5/creating-components.md
+      -
+        Type: Lesson
+        UID: a827c61b-dbf3-4933-8f99-f620bd1adc9c
+        Path: /01-react-week-0.5/identifying-components-exercise.md
+      -
+        Type: Lesson
+        UID: 6f49f15c-7e2f-4bae-a1f0-b1f49e8ffcd8
+        Path: /01-react-week-0.5/props.md
+      -
+        Type: Lesson
+        UID: 580b4ce1-3517-41f8-afdb-a0fc5ba9960c
+        Path: /01-react-week-0.5/prop-types.md
+      -
+        Type: Lesson
+        UID: d81424ae-eab8-4971-9a94-94194cd4077f
+        Path: /01-react-week-0.5/styling.md
       - 
         Type: Lesson
         UID: 605b4d06-a7ca-4a09-bb3e-6106d6a6bde0
         Path: /01-react-week-0.5/react-chatlog.md
       -
-        Type: Lesson
-        UID: 872eea6b-7693-4d0b-80cf-52b64190f221
-        Path: /01-react-week-0.5/react-hello-world.md
-        
+        Type: Checkpoint
+        UID: f5b7c553-ac24-4aea-b9e9-0b1c095d8731
+        Path: /01-react-week-0.5/react-timeline.checkpoint.md
