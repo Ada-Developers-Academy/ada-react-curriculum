@@ -1,5 +1,7 @@
 # Creating Components
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=d02bbc40-b03f-47d0-b8f2-ac8c01798fcd&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Create our own component
@@ -99,7 +101,7 @@ With your neighbors, modify the JSX returned by the `Student` component. Make th
 
 We used the existing index.js code to render the `App` component that was provided to use by the boilerplate React application. Then, we created a new component and added it to the `App` component's render function to be able to see it within our application.
 
-![basic component setup](images/basic-components.png)
+![basic component setup](./images/basic-components.png)
 
 In the next phase of this application, we are going to extend our application to support multiple students and switch from hard-coded to dynamic data.
 
@@ -132,6 +134,71 @@ The DOM is stored as a [node tree](https://en.wikipedia.org/wiki/Tree_(data_stru
 ![A two node tree, where the App is rendering a single Student node.](./images/tree_app_renders_student.jpeg)
 
 As we continue learning about React and adding new components to our app, this tree will grow and branch off from certain nodes.
+
+For the following questions, use the component below.  Assume it is part of the project we've been working on and the file `Logo.js` is in the components directory, just like `Student.js`:
+```javascript
+// src/components/Logo.js
+import React from 'react';
+
+const Logo = () => {
+  // Component functions always return JSX
+  return (
+    <div>
+      <img src="https://adadevelopersacademy.org/wp-content/uploads/2019/08/logo.png">
+    </div>
+  );
+};
+
+export default Logo;
+```
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: short-answer
+* id: f885f077-84f8-4e4f-b6f5-08cadfcf6757
+* title: Import Statement
+
+##### !question
+
+For the Logo component above, if we want to add it to our App component, what is the `import` statement we need to add to `App.js`?
+
+##### !end-question
+
+##### !answer
+
+import Logo from './components/Logo';
+
+##### !end-answer
+
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: short-answer
+* id: 17921469-1ad1-4586-8533-7148724877a3
+* title: Adding Components to Other Components
+
+##### !question
+
+What is the JSX statement to add the Logo component to the App component?
+
+##### !end-question
+
+##### !answer
+
+<Logo />
+
+##### !end-answer
+
+### !end-challenge
+
+<!--END CHALLENGE-->
 
 ## Key Takeaway
 
