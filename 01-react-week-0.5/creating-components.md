@@ -137,6 +137,7 @@ As we continue learning about React and adding new components to our app, this t
 
 For the following questions, use the component below.  Assume it is part of the project we've been working on and the file `Logo.js` is in the components directory, just like `Student.js`:
 ```javascript
+// src/components/Logo.js
 import React from 'react';
 
 const Logo = () => {
