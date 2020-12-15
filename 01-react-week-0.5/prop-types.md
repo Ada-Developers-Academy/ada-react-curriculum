@@ -9,7 +9,7 @@ By the end of this lesson you should be able to:
 
 You may have noticed this message from your JavaScript linter.  "____ is missing from props validation (react/prop-types)."  The linter is indicating that it can't identify the fields of props.  You can help the linter out by using a feature of React called PropTypes in which you explicitly list the props a component takes and their types.
 
-![prop types error](../images/prop-types.png)
+![prop types error](images/prop-types.png)
 
 In this lesson we will define `propTypes` in our React components which will provide some type-checking and documentation of our React component props.
 
