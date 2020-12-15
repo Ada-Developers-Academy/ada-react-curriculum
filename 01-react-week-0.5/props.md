@@ -1,5 +1,7 @@
 # Passing data using props
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=88ffc1c8-4264-4f09-b760-ac8c017f6872&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 - Examine how React allows components to manage data
@@ -54,10 +56,6 @@ const ComponentB = (props) => {
 export default ComponentB;
 ```
 
-**More Complex**
-
-A fairly common thing to do is to utilize `props` to pass an event handler from a parent component to a child component. We'll see this in later examples.
-
 ## Try it!
 
 ### One Component
@@ -88,7 +86,7 @@ To do this, we will pass in the data from the `App` component to the `Student` c
 
 If we identify each individual piece of the component rendered, we'll see:
 
-![component prop breakdown](images/component-prop-breakdown.png)
+![component prop breakdown](./images/component-prop-breakdown.png)
 
 Prop names can be any variable you want them to be. In this particular case, we chose `fullName` and `email` to store our values.
 
@@ -103,7 +101,7 @@ One student is great and all, but ideally our app should be able to manage our w
 To achieve this _separation of concerns_, we'll create a new component called `StudentCollection` that will live between the existing  `App` and `Student` components. When we're done, this new component will manage the full list of students. To start, we'll make it render a "list" of only one student.
 
 **This diagram will drive our overall approach for accomplishing this goal:**
-![nested components](images/nested-components.png)
+![nested components](./images/nested-components.png)
 <!-- https://drive.google.com/open?id=1xq5jaCrI7FGp6PG1gr-bYE1ZTvPb5PxZ -->
 
 1. Spend a few minutes now going back to the [creating components](creating-components.md) notes to see how to create a new component
@@ -142,7 +140,7 @@ export default StudentCollection;
 
 At this point your app should look almost exactly the same as it did before, except the student info will be behind a bullet point.
 
-#### Rendering a List of Students
+#### Generating the List of Students
 
 Now instead of one student, we will render information about a whole list of students. We will keep the information about the students in an array in our `StudentCollection` component, and render a `Student` component for each element in the array.
 
@@ -184,13 +182,50 @@ const StudentCollection = () => {
 };
 ```
 
-**Take a moment** to review this code with your neighbor to understand what it is doing. Question: what would this code look like if we used `forEach` instead of `map`?
+**Take a moment** to review this code to understand what it is doing. 
 
 One thing to watch out for: we've given our `<li>` element a new prop, `key`. This is a React thing: whenever you have an array of several components like this, you need to give each a unique key. The `key` prop is not visible in our child component; React eats it. For now the index in the array (`i`) will work fine.
 
-Lastly, we must put this new collection of `Student` components in our `render` function in order to see the results.
+<details>
+<summary>**Question**: what would this code look like if we used `forEach` instead of `map`?</summary>
 
-Replace `<Student fullName="Improved Ada" email="improved-ada@ada.co" />` with the variable `studentComponents` and examine the result. Use Chrome's dev tools to inspect the generated HTML. Does it look like you expected?
+*`map`*
+- Iterates over all of the elements of the array.
+- Calls the callback function for each element with the element as a parameter (and optionally the array index of the element as another parameter).
+- Takes the return value of the callback function and stores it in a new array at the same index.
+- Returns the new array containing all of the return values.
+
+*`forEach`*
+- Iterates over all of the elements of the array.
+- Calls the callback function for each element with the element as a parameter (and optionally the array index of the element as another parameter).
+- Discards the return value of the callback function and returns _undefined_.
+
+In the above code, we need an array of JSX elements at the end so `map` is a better choice.  If we *have* to use `forEach`, we need a way to save the JSX we're generating in the callback function.  It is possible to use `forEach` to modify the array that it's being called on, and doing this requires using the third optional callback parameter, which is the array that `forEach` was called on.  If we create a callback that has takes 3 parameters, `forEach` will pass the element to the first parameter, the index of the element to the second and the array as the third.  The callback function can then modify the array directly.  If we decide to go this route (*warning* this isn't the best way to do this, overwriting our original data is not a great plan), here's the code:
+
+```javascript
+// src/components/StudentCollection.js
+const StudentCollection = () => {
+  const students // ... array ...
+
+  students.forEach((student, i, arrayForEachWasCalledOn) => {
+    arrayForEachWasCalledOn[i] = (
+      <li key={i}>
+        <Student fullName={ student.fullName } email={ student.email } />
+      </li>
+    );
+  });
+
+  return // ... JSX ...
+};
+```
+
+</details>
+
+#### Rendering the List of Students
+
+Lastly, we must put this new collection of `Student` components in the `StudentCollection` return statement in order to see the results.
+
+Replace `<Student fullName="Improved Ada" email="improved-ada@ada.co" />` with  `{studentComponents}` and examine the result. Use Chrome's dev tools to inspect the generated HTML. Does it look like you expected?
 
 ## Exercise:  Moving Students Up
 
