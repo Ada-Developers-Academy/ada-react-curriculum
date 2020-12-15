@@ -44,7 +44,7 @@ Wait a second - what's with that syntax? We just attached an attribute (`propTyp
 
 The above block defines two props. They both must be Strings. `email` is optional, but `fullName` is required to use a `Student` component. If you try to use the `Student` component without a `fullName` prop you will get this error message in your browswer's console:
 
-![Error Msg](../images/missing-prop.png)
+![Error Msg](images/missing-prop.png)
 
 If a component has optional props you can simply leave off the `isRequired` attribute.
 
