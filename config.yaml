@@ -44,12 +44,12 @@ Standards:
       -
         Type: Lesson
         UID: d81424ae-eab8-4971-9a94-94194cd4077f
-        Path: /01-react-week-0.5/styling.md
+        Path: /01-react-week-0.5/styling.md  
       - 
         Type: Lesson
         UID: 605b4d06-a7ca-4a09-bb3e-6106d6a6bde0
         Path: /01-react-week-0.5/react-chatlog.md        
-      -
+      -      
         Type: Checkpoint
         UID: f5b7c553-ac24-4aea-b9e9-0b1c095d8731
         Path: /01-react-week-0.5/react-timeline.checkpoint.md
