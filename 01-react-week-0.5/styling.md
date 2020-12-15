@@ -115,7 +115,8 @@ What else can we do? How far can we extend this? Everything else about JavaScrip
 - You can make the value of `className` to be a variable. If you have a variable `let myClass = 'my-cool-class'`, you can say `<div className={myClass}></div>`
 - If you need to conditionally set some styles, you can do that through conditionally modifying a string! You'll have to set a variable to the correct value before returning JSX, because you can't do conditional logic in JSX
 check
-<!-- BEGIN CHALLENGE-->
+
+<!-- BEGIN CHALLENGE -->
 
 ### !challenge
 
