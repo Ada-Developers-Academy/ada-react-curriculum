@@ -173,6 +173,13 @@ const styling = {
 ##### !end-rubric
 
 <!--optional-->
+##### !hint
+
+- Can you have a minus sign in a key for border-radius?
+- Can a value be 10px?
+- Are we setting inline styles or using a className?
+
+##### !end-hint
 ##### !explanation
 
 ##### !end-explanation
