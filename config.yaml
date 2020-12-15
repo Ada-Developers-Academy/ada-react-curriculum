@@ -45,14 +45,6 @@ Standards:
         Type: Lesson
         UID: d81424ae-eab8-4971-9a94-94194cd4077f
         Path: /01-react-week-0.5/styling.md
-      -
-        Type: Lesson
-        UID: 872eea6b-7693-4d0b-80cf-52b64190f221
-        Path: /01-react-week-0.5/react-hello-world.md
-      -
-        Type: Lesson
-        UID: df8b258a-2f0e-4e00-8470-2ef81318ea75
-        Path: /01-react-week-0.5/props.md
       - 
         Type: Lesson
         UID: 605b4d06-a7ca-4a09-bb3e-6106d6a6bde0
