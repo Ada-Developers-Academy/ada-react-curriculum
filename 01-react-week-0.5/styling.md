@@ -1,5 +1,9 @@
 # Using CSS in React Components
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=dfaeb23c-c8a5-4887-8a3f-ac9201333031&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+- [CodeSandbox Used in Demo](https://codesandbox.io/s/react-css-example-g4gm0?file=/src/components/Link.js:244-268)
+
 ## Learning Goals
 
 - See options for how to include CSS in React components
