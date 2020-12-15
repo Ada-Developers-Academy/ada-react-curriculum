@@ -7,7 +7,7 @@ To get you started, we've done an example of this using a MediaRanker applicatio
 
 Look at this screenshot of a MediaRanker application (the site in black and white). We've outline the components in colorful boxes and titles.
 
-![Media Ranker as Components](../images/media-ranker-components.png)
+![Media Ranker as Components](images/media-ranker-components.png)
 <!-- https://docs.google.com/drawings/d/1zWLaZfPatvVE7cFS2qdpnOLgsyW45ZJP1YDEGWECi7g/edit -->
 
 Our list of proposed components from this website is:

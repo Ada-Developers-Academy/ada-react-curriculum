@@ -1,4 +1,4 @@
-# Passing data using `props`
+# Passing data using props
 
 <iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=88ffc1c8-4264-4f09-b760-ac8c017f6872&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
@@ -263,7 +263,7 @@ export default App;
 
 Modify the `StudentCollection` component to use the `students` prop passed in.  Now the StudentCollection can be used with any array of student objects.
 
-If you have trouble you can see an example in our [examples folder](examples/StudentCollection.js).
+If you have trouble you can see [an example](studentColletion.resource.md).
 
 ## Key Takeaway
 
