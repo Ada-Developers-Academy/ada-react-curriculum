@@ -28,11 +28,9 @@ Answer the following questions:
 
 ## Part Two: Make a List of Possible Components with CraigsList
 
-Take a look at [CraigsList](https://seattle.craigslist.org/).
+Take a look at [CraigsList](https://seattle.craigslist.org/).  Download this ![screenshot](images/craigslist-screenshot.png) or take your own.  Create a new [draw.io](http://www.draw.io) diagram  and import the screenshot (Arrange -> Insert -> Insert Image).  
 
-Identify the visual "components" the website is comprised of, and create a list of components that a React CraigsList would need, just like above.
-
-We suggest using using your white board or paper to draw these out on your table!
+Identify the visual "components" the website is comprised of, and outline and label the components that a React CraigsList would need like the MediaRanker screenshot above.
 
 Hint: As you're drawing this out, think about the following questions:
 
@@ -40,3 +38,36 @@ Hint: As you're drawing this out, think about the following questions:
   - Of these repeated components, what is similar between them? What is different between them?
 - Where do you see "nested components"? Which components are inside of others? How many layers of components exist?
 - Where do you see sibling components? Which components are siblings to each other?
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: short-answer
+* id: 9c66c383-0d78-49ab-8da0-3f31945e54fe
+* title: Submit your diagram
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+
+When you are finished drawing your diagram submit the share link below (File -> Share, and set the permissions to 'Anyone with the link')
+
+##### !end-question
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+##### !placeholder
+
+Paste link here
+
+##### !end-placeholder
+
+### !end-challenge
+
+<!--END CHALLENGE-->
