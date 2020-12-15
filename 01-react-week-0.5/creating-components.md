@@ -168,7 +168,7 @@ For the Logo component above, if we want to add it to our App component, what is
 
 ##### !answer
 
-import Logo from './components/Student';
+import Logo from './components/Logo';
 
 ##### !end-answer
 
