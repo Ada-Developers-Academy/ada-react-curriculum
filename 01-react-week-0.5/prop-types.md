@@ -1,5 +1,7 @@
 # Prop Types
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5535b9fb-ebbe-4fcb-a8d9-ac930039c00d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Learning Goals
 
 By the end of this lesson you should be able to:
@@ -113,12 +115,10 @@ By adding `propTypes` to your React component classes you gain two things.  Firs
 
 <!--END CHALLENGE-->
 
-## Advantages of PropTypes
-
 By adding propTypes to your React component classes you gain two things. 
 
 1.  You document the props that your component can and must take. This makes it much easier for another developer to use your component in another application. 
-1.  propTypes helps React engage in type-checking, making sure the proper props are passed to a component along with their correct types. If a component is missing a prop or the wrong type is passed, React will generate a helpful error message.
+2.  propTypes helps React engage in type-checking, making sure the proper props are passed to a component along with their correct types. If a component is missing a prop or the wrong type is passed, React will generate a helpful error message.
 
 ## Default Prop Values
 
