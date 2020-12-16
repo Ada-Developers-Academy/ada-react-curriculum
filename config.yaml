@@ -58,8 +58,8 @@ Standards:
         UID: f5b7c553-ac24-4aea-b9e9-0b1c095d8731
         Path: /01-react-week-0.5/react-timeline.checkpoint.md
   - 
-    Title: React Week 0.5
-    Description: Intro to React
+    Title: React Week 1
+    Description: State & Props
     UID: d0e03588-5cc2-41b0-aa43-178785b252fc
     SuccessCriteria:
       - success criteria
