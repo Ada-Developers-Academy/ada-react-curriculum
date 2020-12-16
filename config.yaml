@@ -57,3 +57,14 @@ Standards:
         Type: Checkpoint
         UID: f5b7c553-ac24-4aea-b9e9-0b1c095d8731
         Path: /01-react-week-0.5/react-timeline.checkpoint.md
+  - 
+    Title: React Week 0.5
+    Description: Intro to React
+    UID: b2087b6c-12e5-41b7-ada5-c804b721d3ac
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 2ded36c0-2070-4970-9456-6e291609eb39
+        Path: /02-react-week-1/controlled-forms-exercise.md
