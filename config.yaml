@@ -60,11 +60,11 @@ Standards:
   - 
     Title: React Week 0.5
     Description: Intro to React
-    UID: b2087b6c-12e5-41b7-ada5-c804b721d3ac
+    UID: d0e03588-5cc2-41b0-aa43-178785b252fc
     SuccessCriteria:
       - success criteria
     ContentFiles:
       -
         Type: Lesson
-        UID: 2ded36c0-2070-4970-9456-6e291609eb39
+        UID: 3197b7fa-984c-4dba-82a7-2607b4ce5129
         Path: /02-react-week-1/controlled-forms-exercise.md
