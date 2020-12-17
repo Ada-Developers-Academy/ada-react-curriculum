@@ -109,7 +109,7 @@ function SimpleComponent() {
 
 ```
 
-What is the line of code that we need to add a state variable, and set it's initial value to 10?
+Write the line of code to add a state variable, and set it's initial value to 10
 
 ##### !end-question
 
@@ -122,6 +122,54 @@ const \[[^\s]+, [^\s]+\] = useState\(10\);
 ##### !explanation
 
 An example of a line of code that would work is `const [myVar, setMyVar] = useState(10);`
+
+##### !end-explanation
+
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: short-answer
+* id: 5e432183-8e77-48d6-9028-4e5439e8d54a
+* title: using `useState`
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+
+Starting with the following component:
+```javascript
+
+function CalendarWidget(props) {
+
+    const[day, setDay] = useState('January 1');
+    if(props.isHoliday(day)) {
+        const[holidayCount, setHolidayCount] = useState(0);
+    }
+    
+    // ...
+};
+
+```
+
+Is this a correct usage of `useState`?  Why or why not?
+
+##### !end-question
+
+##### !answer
+
+/\bno\b|\bNo\b/
+##### !end-answer
+
+<!--optional-->
+##### !explanation
+
+No!  Nesting the `useState` call inside of the `if` statement means that it is not guaranteed to be called in the same way every time this component renders.  Every render must have the same hook calls in the same order.
 
 ##### !end-explanation
 
