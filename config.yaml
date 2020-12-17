@@ -68,3 +68,7 @@ Standards:
         Type: Lesson
         UID: 3197b7fa-984c-4dba-82a7-2607b4ce5129
         Path: /02-react-week-1/controlled-forms-exercise.md
+      -
+        Type: Lesson
+        UID: d946c4b4-e049-4250-ab1b-faffa64ab302
+        Path: /02-react-week-1/intro-to-state.md
