@@ -101,15 +101,15 @@ React recently introduced a tool to the framework called 'hooks', which we'll be
 
 ### !end-callout
 
-"Okay okay," I hear you saying, "But how are thoe fields getting changed!?"
+"Okay okay," I hear you saying, "But how are those fields getting changed!?"
 
-Without getting to into the weeds, there is a function call called `setState` -which we call on line 11 in the codepen- that belongs to `React.Component`. It takes the **version of the state that you want to update to** as its parameter, and checks it against the current `state` object. If there are new or updated variables in that object, React updates the DOM to reflect those changes. If not, React just gives the component a high-five and lets them on their merry way.
+Without getting to into the weeds, there is a function call called `setState` -which we call on line 11 in the codepen- that belongs to `React.Component`. It takes an **object that updates all the fields of your state to their new values** as its parameter, and checks it against the current `state` object. If there are new or updated fields in that object, React updates the DOM to reflect those changes. If not, React just gives the component a high-five and lets them on their merry way.
 
 How do we know what's getting typed in the input box? How do we do that ourselves? Sorry! You'll have to wait it out with us on this one. The short answer is "event handling", which we will go into detail on later.
 
 ## But That's The Old Way
 
-Facebook's React team noticed something interesting and somewhat troubling about the way React was being used. Developers around the world were using the React framework, but so many of them weren't using functional components very often! Turns out, tracking state is something that a lot of components need to do, and since developers **loathe** rewriting code, most components were written as classes in order to save the headache of having to update the component later when someone decided it would need state.
+Facebook's React team noticed something interesting and somewhat troubling about the way React was being used. Developers around the world were using the React framework, but so many of them weren't using functional components very often! Turns out, tracking state is something that a lot of components need to do, and since developers **loathe** rewriting code, most components were written as classes in order to save the headache of having to update the component later, when someone decided it would need state.
 
 On top of that, this style of component is not as DRY. In fact, some might say it's getting rather sweaty. It has a lot of syntax that we have to remember, and there's a few annoying speedbumps when using `setState` that we won't go into detail about (trust us, it's kind of prickly).
 
