@@ -77,18 +77,54 @@ Lets rewrite the Accordian Example from the previous state lesson using function
 [TODO]
 
 
-## Complex Pseudo Code Example with Diagram
+## PacMan
 
+So far all of our examples have been fairly simple.  Let's look at how state can be used in a more complex way to build the game (PacMan)[https://en.wikipedia.org/wiki/Pac-Man]!  The elements of PacMan are PacMan himself, the ghosts, the dots, the special energizer dots and the fruit.  We could store all of the data at the App level and propagate it down using props.  If we look at all of the moving parts in PacMan, this solution quickly becomes very intricate and requires a lot of logic at the App level. If we think about this problem in terms of state, and letting each element own it's own state, things become much simpler.  Let's start from assuming we have set up a callback structure that allows our elements to know where PacMan is, and that they each have internal logic about what to do if they intersect with PacMan.  We're not going to cover that part of the project in this lesson, we're just going to look at how we could use state to keep track of important information inside each component.  Take a look at this diagram and think about how the state of each component would change as the game progresses:
+
+[DIAGRAM HERE] https://drive.google.com/file/d/1EEwjhb0vr-W2gkyold2JRW1chQlz0-uR/view?usp=sharing
 
 ## Check for Understanding
 
-Use the following React Class Component to answer the questions
+<!--BEGIN CHALLENGE-->
 
+### !challenge
+
+* type: short-answer
+* id: eaac0d52-c7dc-4b88-b40c-b6d0956eb6af
+* title: Adding `useState`
+
+##### !question
+
+Starting with the following component:
 ```javascript
 
-// Simple Class Example
+function SimpleComponent() {
 
+    return(
+        <div>
+            <p>Ada Is Awesome!</p>
+        </div>
+    );
+};
 
 ```
 
-**Question 1** 
+What is the line of code that we need to add a state variable, and set it's initial value to 10?
+
+##### !end-question
+
+##### !answer
+
+const \[[^\s]+, [^\s]+\] = useState\(10\);
+
+##### !end-answer
+
+##### !explanation
+
+An example of a line of code that would work is `const [myVar, setMyVar] = useState(10);`
+
+##### !end-explanation
+
+### !end-challenge
+
+<!--END CHALLENGE-->
