@@ -117,7 +117,7 @@ const prices = [3.75, 15.80, 10.0];
 console.log (calculateBill(...prices)); // 31.914
 ```
 
-In the above example:  `calculateBill(...prices)` is the equivalent to doing:  `calculateBill(prices[0], prices[1], prices[2]), a much more compact syntax.
+In the above example:  `calculateBill(...prices)` is the equivalent to doing:  `calculateBill(prices[0], prices[1], prices[2])`, a much more compact syntax.
 
 The `Math.max` function is a good example of a function you might choose to use the spread operator on, it takes numeric arguments (unlimited size) and returns the largest item.  
 
