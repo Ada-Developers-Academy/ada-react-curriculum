@@ -61,7 +61,7 @@ class Student extends React.Component {
   constructor(props) {
     super(props); //props is passed in to the constructor of the component...
     this.state = {
-      fullname: this.props.fullname,
+      present: false,
     }
   }
   
