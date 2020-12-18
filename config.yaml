@@ -70,6 +70,10 @@ Standards:
     ContentFiles:
       -
         Type: Lesson
+        UID: eda6970a-9846-446c-9767-53f6f03003fc
+        Path: /02-react-week-1/spreading-and-destructuring.md
+      -
+        Type: Lesson
         UID: 2d5aea6b-dece-47a3-9335-4badbcc50153
         Path: /02-react-week-1/events.md
       -
