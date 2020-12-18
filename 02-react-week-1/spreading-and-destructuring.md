@@ -350,8 +350,8 @@ console.log(combinePreferences(user, billing, project));
 As a pair read the code and predict the result.  Then run the resulting code in the terminal.
 
 1. Identify where the spread operator and rest parameters are.
-2. Did it output what you expected?  Why?
-3. Is the `forEach` loop necessary?  Could it be done without a loop?  Why or why not?
+1. Did it output what you expected?  Why?
+1. Is the `forEach` loop necessary?  Could it be done without a loop?  Why or why not?
 
 <details>
   <summary>
