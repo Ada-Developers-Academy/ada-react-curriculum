@@ -100,7 +100,7 @@ class Student extends React.Component {
 export default Student;
 ```
 
-And if you want to play around with this live, [check out this codepen.](https://codepen.io/dhelmgren/pen/dypRybV) Don't worry about how the pieces we haven't talked about yet work, just try it out and confirm that we can change the name of the student.
+And if you want to play around with this live, [check out this CodeSandbox.](https://codesandbox.io/s/student-nskt5) Don't worry about how the pieces we haven't talked about yet work, just try it out and confirm that we can change the name of the student.
 
 Okay, let's take stock of what's different: notice that since we aren't using a function, we can't just hand our `props` off in the usual way. Nope, instead, we need to create a constructor that can accept the `props` we want to pass it. Note that it's important that we call `super(props)` as a part of this statement! Our `props` contain more than just the info we the developers are sending down, so it's important that our parent class, `React.Component`, knows about them as well.
 
@@ -115,7 +115,7 @@ React recently introduced a tool to the framework called 'hooks', which we'll be
 
 "Okay okay," I hear you saying, "But how are those fields getting changed!?"
 
-Without getting to into the weeds, there is a function call called `setState` -which we call on line 11 in the codepen- that belongs to `React.Component`. It takes an **object that updates all the fields of your state to their new values** as its parameter, and checks it against the current `state` object. If there are new or updated fields in that object, React updates the DOM to reflect those changes. If not, React just gives the component a high-five and lets them on their merry way.
+Without getting to into the weeds, there is a function call called `setState` -which we call on line 15 in the codesandbox- that belongs to `React.Component`. It takes an **object that updates all the fields of your state to their new values** as its parameter, and checks it against the current `state` object. If there are new or updated fields in that object, React updates the DOM to reflect those changes. If not, React just gives the component a high-five and lets them on their merry way.
 
 How do we know what's getting typed in the input box? How do we do that ourselves? Sorry! You'll have to wait it out with us on this one. The short answer is "event handling", which we will go into detail on later.
 
