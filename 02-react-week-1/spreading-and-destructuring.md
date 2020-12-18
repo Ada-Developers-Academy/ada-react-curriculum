@@ -359,8 +359,8 @@ As a pair read the code and predict the result.  Then run the resulting code in 
   </summary>
 
   1. The rest parameter occurs at `combinePreferences(user, ...preferences)`, and the spread operator is used twice at `user.preferences = { ...user.preferences, ...preference}`.  
-  2. The result is the user object with it's preference attribute updated merging them in order of appearance.
-  3. The `forEach` loop is needed because using the spread operator on an array will result in merging in the array's keys (index numbers) and values into the preferences.  
+  1. The result is the user object with it's preference attribute updated merging them in order of appearance.
+  1. The `forEach` loop is needed because using the spread operator on an array will result in merging in the array's keys (index numbers) and values into the preferences.  
 
 </details>
 
