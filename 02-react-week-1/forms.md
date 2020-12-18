@@ -6,6 +6,10 @@
 - Implement a controlled form as a React component
 - Handle the event of a form submission
 
+## Video Lesson
+
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=309d0c0c-3f1e-4635-a90f-ac950007fdd9&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Overview
 
 Since we've already learn how event handling works in React, we should be able to take the application of this knowledge one step further to allow us to submit a set of form data. Forms work a bit different than other HTML elements because they maintain some of their own state.
@@ -162,7 +166,35 @@ Now every time the user types into the name input field the `NewStudentForm`'s s
 
 **Practice**:  Update the email field to have the `NewStudentForm` component manage it's state as well.
 
-**Question** Why would it be useful to track the state of a form field?
+### !challenge
+
+* type: short-answer
+* id: 9bc71d37-15ba-4774-aefb-565b7fafb6b6
+* title: Journal
+
+##### !question
+
+Why would it be useful to track the state of a form field?
+
+##### !end-question
+
+##### !placeholder
+
+Geez, uhhh....
+
+##### !end-placeholder
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+##### !explanation
+Keeping an eye on the form data as it changes lets us bundle up all the relevant info at the same time, and also can let us do some validations as we go. Think about when a website has a password validator, that tells you when your password meets each requirement.
+##### !end-explanation 
+
+### !end-challenge
 
 ## Handling Submissions
 
@@ -259,8 +291,6 @@ Then we can update the `onFormSubmit` function.
 ```
 
 Now when we submit the form, we should see students being added to the list. Good work!
-
-**Question:** How does this compare to the event handling we did earlier in the week?
 
 **Exercise:** Right now, we can add a new student with bogus data, for example a blank name. We'll talk about form validation more in a future lesson, but for now, how would you stop the student from being added without a name?
 
