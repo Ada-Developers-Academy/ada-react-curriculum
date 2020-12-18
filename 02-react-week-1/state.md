@@ -228,7 +228,7 @@ Write the line of code to add a state variable, and set it's initial value to 10
 
 ##### !answer
 
-const \[[^\s]+, [^\s]+\] = useState\(10\);
+/const \[\s*\S+\s*\, \S+\s*\] = useState\(10\);/
 
 ##### !end-answer
 
