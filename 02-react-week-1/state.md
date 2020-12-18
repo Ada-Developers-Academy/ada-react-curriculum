@@ -55,6 +55,7 @@ export default Example;
 *Warning* in the above example, `exclamationCount` is *not* the state variable.  `exclamationCount` is the current value of the state variable.  Let's dig into how this works.  On the first render `useState` will set up the state variable and then give us the current value of that variable and the update function.  When we call the update function and pass it a new value of the state variable, the value is stored and then a render is triggered.  Render calls the Example function.  Every time we call the Example function, `useState` is called.  Every time that `useState` is called after the first render, `useState` will grab the current value of the state variable and store it into `exclamationCount`.  We can then use that value in the code in the rest of the Example component.
 
 This brings us to a few important points to note about calling `useState`.
+
 1.  `useState` must be called at the top of the component.
 1.  `useState` can not be called from inside a loop or an if statement
 
@@ -175,7 +176,7 @@ const Student = (props) => {
         <li>Birthday: {props.birthday}</li>
         <li>Email: {props.email}</li>
       </ul>
-      // Note that we will get into what's happening in this line in the Events lesson, coming up next!
+      {/* Note that we will get into what's happening in this line in the Events lesson, coming up next! */}
       <button onClick={changePresent}>
         Mark {present ? 'Absent' : 'Present'}
       </button>
