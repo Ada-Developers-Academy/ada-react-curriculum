@@ -72,7 +72,7 @@ class Student extends React.Component {
   //It's okay to not understand what's going on here yet. 
   //Long story short, I can get the current value of the component's state, invert it,
   //and send that back to the component's state.
-  onSetPresent = () => {
+  updatePresent = () => {
     this.setState({present: !this.state.present})
   }
 
@@ -100,7 +100,7 @@ class Student extends React.Component {
 export default Student;
 ```
 
-And if you want to play around with this live, [check out this CodeSandbox.](https://codesandbox.io/s/student-nskt5) Don't worry about how the pieces we haven't talked about yet work, just try it out and confirm that we can change the name of the student.
+And if you want to play around with this live, [check out this CodeSandbox.](https://codesandbox.io/s/student-nskt5) Don't worry about how the pieces we haven't talked about yet work, just try it out and confirm that we can the text of the button from Present to Absent.
 
 Okay, let's take stock of what's different: notice that since we aren't using a function, we can't just hand our `props` off in the usual way. Nope, instead, we need to create a constructor that can accept the `props` we want to pass it. Note that it's important that we call `super(props)` as a part of this statement! Our `props` contain more than just the info we the developers are sending down, so it's important that our parent class, `React.Component`, knows about them as well.
 
