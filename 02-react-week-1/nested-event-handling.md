@@ -282,7 +282,11 @@ const onButtonClick = () => {
 
 1.  Remember that we added a function `updateStudent` to the `App` component.  This function updates the student list.
 2.  Then we passed the function into `StudentCollection` component as a prop with:  `<StudentCollection students={studentList} onUpdateStudent={updateStudent} />`
-3.  The `StudentCollection` component forwards that prop to each student component with 
+3.  The `StudentCollection` component forwards that prop to each student component with
+
+This workflow is shown in the image below.
+### !end-callout
+
 ```javascript
 <Student
   fullName={student.fullName}
@@ -292,11 +296,6 @@ const onButtonClick = () => {
   onUpdateStudent={props.onUpdateStudent}
 />
 ```
-
-This workflow is shown in the image below.
-### !end-callout
-
-
 
 Once we call `onUpdateStudent`, execution will be passed back to the `App` component. The student we are interested in updating is something we can match using `props.id`. 
 
