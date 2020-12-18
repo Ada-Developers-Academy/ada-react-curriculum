@@ -70,8 +70,12 @@ Standards:
     ContentFiles:
       -
         Type: Lesson
-        UID: 3197b7fa-984c-4dba-82a7-2607b4ce5129
-        Path: /02-react-week-1/controlled-forms-exercise.md
+        UID: 67190057-82f8-49f6-a197-cb9e4fb3fcaf
+        Path: /02-react-week-1/state.md      
+      -
+        Type: Lesson
+        UID: 2d5aea6b-dece-47a3-9335-4badbcc50153
+        Path: /02-react-week-1/events.md
       -
         Type: Lesson
 
@@ -85,3 +89,11 @@ Standards:
         Type: Lesson
         UID: 8e53f4cb-e5f8-4394-8e6f-1957935bed06
         Path: /02-react-week-1/forms.md
+      -
+        Type: Lesson
+        UID: 3197b7fa-984c-4dba-82a7-2607b4ce5129
+        Path: /02-react-week-1/controlled-forms-exercise.md
+      -      
+        Type: Checkpoint
+        UID: f495355e-01d9-476b-baab-e54b830b12b6
+        Path: /02-react-week-1/react-tic-tac-toe.checkpoint.md
