@@ -70,8 +70,8 @@ class Student extends React.Component {
   }
   
   //It's okay to not understand what's going on here yet. 
-  //Long story short, I can find out the contents of my <input> 
-  //and send them back to the component's state!
+  //Long story short, I can get the current value of the component's state, invert it,
+  //and send that back to the component's state.
   onSetPresent = () => {
     this.setState({present: !this.state.present})
   }
