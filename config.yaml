@@ -57,6 +57,10 @@ Standards:
         Type: Checkpoint
         UID: f5b7c553-ac24-4aea-b9e9-0b1c095d8731
         Path: /01-react-week-0.5/react-timeline.checkpoint.md
+      -
+        Type: Resource
+        UID: 8ae36820-d87d-4d43-99e7-5c1306d12161
+        Path: /01-react-week-0.5/studentColletion.resource.md
   - 
     Title: React Week 1
     Description: State & Props
@@ -66,9 +70,25 @@ Standards:
     ContentFiles:
       -
         Type: Lesson
-        UID: 3197b7fa-984c-4dba-82a7-2607b4ce5129
-        Path: /02-react-week-1/controlled-forms-exercise.md
+        UID: 67190057-82f8-49f6-a197-cb9e4fb3fcaf
+        Path: /02-react-week-1/state.md      
       -
         Type: Lesson
-        UID: 67190057-82f8-49f6-a197-cb9e4fb3fcaf
-        Path: /02-react-week-1/state.md
+        UID: 2d5aea6b-dece-47a3-9335-4badbcc50153
+        Path: /02-react-week-1/events.md
+      -
+        Type: Lesson
+        UID: b041fc7d-d843-4b0f-856f-505780313776
+        Path: /02-react-week-1/nested-event-handling.md
+      -
+        Type: Lesson
+        UID: 8e53f4cb-e5f8-4394-8e6f-1957935bed06
+        Path: /02-react-week-1/forms.md
+      -
+        Type: Lesson
+        UID: 3197b7fa-984c-4dba-82a7-2607b4ce5129
+        Path: /02-react-week-1/controlled-forms-exercise.md
+      -      
+        Type: Checkpoint
+        UID: f495355e-01d9-476b-baab-e54b830b12b6
+        Path: /02-react-week-1/react-tic-tac-toe.checkpoint.md

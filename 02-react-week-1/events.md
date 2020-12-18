@@ -7,31 +7,30 @@
 - Modify `state` via an event handler
 
 ### Overview
-React supplies support on many different events. We'll focus on a few of the common events, keyboard and click, but just know that you should reference the [full list](https://reactjs.org/docs/events.html#supported-events) if you want more information.
+React allows us to handle many different types of events. We'll focus on a couple of the common events (keyboard and click), but just know that you should reference the [full list](https://reactjs.org/docs/events.html#supported-events) if you want more information.
 
 ### Context
 
-In this lecture, we are going to expand upon the `Student` component that we created in the [state lecture](state.md). This was a great component that we created that was storing a student's present status in the component. We used the boolean in the function to determine what to display.
+In this lecture, we are going to dig into the `Student` component that we created in the [state lecture](state.md) and figure out what was going on with the `<button onClick={changePresent}>` line.
 
 ### Adding More Meaning
 
 #### Toggle our Boolean
 
-The boolean value that we're storing in the state seems a little bit useless right now. We set it to `true` as an initial value and we don't ever change it! We have a button and it doesn't do anything!  Next we will add code to change the state of `present` when the button is clicked on.
+We start by storing the boolean value in state (note that we've added `present` to `props` and we're using that as the initial value of our state variable.)
 
 ### onClick Event
 
-Now we'll add the `onClick` attribute to the button whose value will refer to an event handler function that we will create next.
+Let's look at the `onClick` attribute to the button whose value refers to the event handler function `updatePresent`.
 
 ```javascript
 // src/components/Student.js
 const Student = (props) => {
 
   const [present, setPresent] = useState(props.present);
-  const [fullName, setFullName] = useState(props.fullName);
 
   // Function to toggle present
-  const onButtonClick = () => setPresent(!present);
+  const updatePresent = () => setPresent(!present); 
 
     // Component functions always return JSX
     return (
@@ -42,7 +41,7 @@ const Student = (props) => {
           <li>Birthday: {props.birthday}</li>
           <li>Email: {props.email}</li>
         </ul>
-        <button onClick={onButtonClick}>
+        <button onClick={updatePresent}>
           Mark {present ? 'Absent' : 'Present'}
         </button>
       </div>
@@ -50,27 +49,66 @@ const Student = (props) => {
 }
 ```
 
-**Pause here** for a moment with the person sitting next to you. What is this code doing? Refer back to the [state lecture](state.md) if you can't remember what the `setPresent` function is supposed to do.
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
 
-**Note** the arrow function syntax for this event handler function. You could define the event handler function `onButtonClick` as a regular function, but making it an arrow function in this case is a bit more concise and keeps the `this` context to the current component.  
+### !challenge
+
+* type: short-answer
+* id: d56d960f-309a-4a49-813d-49ecada792d0
+* title: Describe code change
+points: 1 (optional, the number of points for scoring as a checkpoint) 
+topics: react, events
+
+##### !question
+
+Let's look at these two lines of code: 
+
+`const updatePresent = () => setPresent(!present); ` (toward the top)
+
+`<button onClick={updatePresent}>` (toward the bottom)
+
+What is this code doing? 
+
+Refer back to the [state lecture](state.md) if you can't remember what the `setPresent` function is supposed to do. 
+
+##### !end-question
+
+##### !placeholder
+
+##### !end-placeholder
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+##### !explanation 
+It's defining a function named updatePresent which changes the `present` value to the opposite of whatever it currently is. That function isn't called yet. Instead, it's referenced down below as the `onClick` function for the button we created in the previous lesson. This type of function is termed a _callback function_. It won't be executed until the event occurs. This is the same for all events defined here in our React components.
+##### !end-explanation 
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
+
+### !callout-info
+## Note on arrow function syntax
+**Note** the arrow function syntax for this event handler function. You could define the event handler function `updatePresent` as a regular function, but making it an arrow function in this case is a bit more concise and keeps the `this` context to the current component.  
+### !end-callout
 
 Now that we have an event handler function defined and tied to this button, let's take a look at our application running on the server to see what the result is. What happens when the button is clicked?
 
-Above we made a function, `onButtonClick` which calls `setPresent` and passes in the opposite of the current state.  Then we told the button when it is clicked to call that function.
+Above we made a function, `updatePresent` which calls `setPresent` and passes in the opposite of the current state.  Then we told the button when it is clicked to call that function.
 
 Now whenever the user clicks on the button the student's present state toggles between true and false!
 
 ![before and after click demo](images/state-before-after.png)
 
-**Questions**:
-1. Based on the code above, what is the name of the function that we want to create to handle the event when this button is clicked?
-2. Is the function being **called** when it is tied to the event?
+### onClick with an anonymous function
 
-This function is not called immediately instead it is passed into the button to be called when click events occur.  This type of function is termed a _callback function_ that won't be executed until the event occurs. This is the same for all events defined here in our React components.
-
-### onClick with an anynomous function
-
-You can also define the function directly in the JSX with an anynomous function like:
+You can also define the function directly in the JSX with an anonymous function like so:
 
 ```javascript
 <button onClick={() => setPresent(!present)}>
@@ -78,11 +116,13 @@ You can also define the function directly in the JSX with an anynomous function 
 </button>
 ```
 
-#### Change the Name
+### Exercise: Change the Name
 
-Another variable that we store is the name. Unfortunately right now, we are passing the `fullName` from props and we **cannot** change the value of our props.  
+Another variable that we store is the name. Unfortunately right now, we are passing the `fullName` from props and we **cannot** change the value of our props.
 
-##### 1.  Convert `fullName` from using props to state.
+Let's update the Student component in our local repo or in [this sandbox](https://codesandbox.io/s/ada-students-with-state-and-events-forked-8xkti?file=/src/components/Student.js) to allow the user to update a student's name! Here are the steps required to do that.
+
+**1.  Convert `fullName` from using props to state.**
 
 This will require you to use `useState` a second time to set the student's fullName in state.  Then make sure it renders in the browser.
 
@@ -122,7 +162,7 @@ Next, we'll need to add a call to the event handler we just wrote.
       <input value={fullName} onChange={onFullNameInputChange} />
 ```
 
-You can see the final version of this [code here](https://codesandbox.io/s/ada-students-with-state-and-events-08fui).
+You can see the final version of this [code here](https://github.com/AdaGold/ada-students/tree/5-events).
 
 ## Key Takeaway
 We tie events to HTML elements in our JSX to handle changes in the state of our components. When we change state (using `setState`), the component will automatically re-render given it's updated values.
