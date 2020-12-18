@@ -11,7 +11,7 @@ Lets play a Game!  In this project you will practice using state & props creatin
 * type: testable-project
 * id: 80644342-efac-471a-970f-640fe9c73ec6
 * title: React Timeline
-* upstream: https://github.com/ada-c14/react-tic-tac-toe
+* upstream: https://github.com/adagold/react-tic-tac-toe
 * validate_fork: false
 * points: 0
 * topics: react
