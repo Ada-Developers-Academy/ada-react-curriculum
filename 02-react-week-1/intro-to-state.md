@@ -80,11 +80,19 @@ class Student extends React.Component {
 
     //...and when we want to access that data, we can use `this`
     return (
-      <div>
-        <h3>{this.state.fullname}</h3>
-        <p>{this.props.email}</p>
-        Change the Name: <input onChange={this.onNameChange}></input>
-      </div>
+<div>
+      <h3>{this.props.fullName}</h3>
+      <ul>
+          <li>Class: C14</li>
+          <li>Birthday: {this.props.birthday}</li>
+          <li>Email: {this.props.email}</li>
+      </ul>
+      // We will dig into what's going on in this line in the Events lesson.  
+      // For now it's enough to know that clicking the button will call the updatePresent function!
+      <button onClick={this.updatePresent}>
+          Mark {this.state.present ? 'Absent' : 'Present'}
+      </button>
+</div>
     );
   }
 }
