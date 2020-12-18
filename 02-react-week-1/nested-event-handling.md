@@ -10,6 +10,10 @@ By the end of this lesson, students should be able to...
 - Understand when and how to lift state from a child component to a parent component
 - Pass event handler functions as callbacks within `props`
 
+## Video Lesson
+
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=e3e55804-c276-45ae-bc78-ac95000b05b1&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Introduction
 
 Last time we worked on our student tracking application, we used a functional `StudentCollection` component to render a list of `Student`s. The student data came from an array created in the `StudentCollection` component.
@@ -36,15 +40,37 @@ Currently there is no way for App to see the state of all student data.  So if a
 
 This would also let us later do things like reorder, sort or remove students.
 
-**Question:** Currently why can't the `App` component see the current present or absent status of a student?
+### !challenge
 
-<details>
-<summary>Our Answer</summary>
+* type: short-answer
+* id: 1560d123-8316-4b97-8cae-df591430efab
+* title: Journal 1
 
+##### !question
+
+Currently why can't the `App` component see the current present or absent status of a student?
+
+##### !end-question
+
+##### !placeholder
+
+There's probably an answer...
+
+##### !end-placeholder
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+##### !explanation 
 Because _state_ is internal to the component, parent components have no visibility into it.  They can only see the props that they pass in. 
 
 Instead, we will _lift_ the state out of the `Student` component into the `App` component. This is a very common technique when managing a list of components in React: all the state lives in a parent component.
-</details>
+##### !end-explanation
+
+### !end-challenge
 
 #### Adding State to App
 
@@ -116,25 +142,63 @@ function App () {
 }
 ```
 
-**Question**:  The `updateStudent` function creates a new array to pass in when it calls `setStudentList`?  Why?  What happens when you only modify the correct element of `studentList`?
+### !challenge
 
-<details>
-  <summary>Our answer</summary>
+* type: short-answer
+* id: 063f9aec-8530-4fde-ae58-f7e89fc3b40a
+* title: Journal 2
+##### !question
 
-  The `setStudentList` method checks to see if the new state is different from the old state, but it doesn't look very carefully.  With objects and arrays React only checks to see if the memory address changed.  Is this varaible referencing the same address as the prior state, if so, it doesn't bother to re-render the component. 
+The `updateStudent` function creates a new array to pass in when it calls `setStudentList`?  Why?  What happens when you only modify the correct element of `studentList`?
 
-  Therefore you need to pass in a new object to update state.  If you do not... the component will not be re-rendered.
-</details>
+##### !end-question
+
+##### !placeholder
+
+So what I think is...
+
+##### !end-placeholder
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+##### !explanation 
+The `setStudentList` method checks to see if the new state is different from the old state, but it doesn't look very carefully.  With objects and arrays React only checks to see if the memory address changed.  Is this varaible referencing the same address as the prior state, if so, it doesn't bother to re-render the component. 
+
+Therefore you need to pass in a new object to update state.  If you do not... the component will not be re-rendered.
+##### !end-explanation
+### !end-challenge
 
 ### Removing State from Student
 
-**Question:** Now that App has the student list in state.  What pieces of state still need to be kept inside of the `Student` component?
+### !challenge
 
-<details>
-  <summary>Answer</summary>
+* type: short-answer
+* id: 2b277e21-071e-4b52-b56c-a988ad34017f
+* title: Journal 3
 
-  Actually, none! While we _could_ make a working app that uses a stateful `Student` and `App` components, it will be cleaner to read and update in the future if we turn the stateful version of `Student` back into a stateless component!
-</details>
+##### !question
+
+Now that App has the student list in state.  What pieces of state still need to be kept inside of the `Student` component?
+
+##### !end-question
+
+##### !placeholder
+Just tell me, nerd!
+##### !end-placeholder
+
+##### !answer
+/.+/
+##### !end-answer
+
+##### !explanation 
+Actually, none! While we _could_ make a working app that uses a stateful `Student` and `App` components, it will be cleaner to read and update in the future if we turn the stateful version of `Student` back into a stateless component!
+##### !end-explanation
+
+### !end-challenge
 
 We can now remove `useState` from the `Student` component and return all references to the state variables into props.
 
@@ -182,11 +246,7 @@ There are a few things to consider when making this change to our application. T
 2. Which component is managing the student data?
 3. Is the answer to #1 the same as #2?
 
-<details>
-  <summary>Answer</summary>
-  If you answered NO to question #3, you're on to something big. The data related to the students is tracked in `App` while the button to mark an individual student "present" should really be on each individual `Student` component. Our challenge then is to use the tools we have been given to _propagate_ the button press event from one component to another.
-</details>
-
+If you answered NO to question #3, you're on to something big. The data related to the students is tracked in `App` while the button to mark an individual student "present" should really be on each individual `Student` component. Our challenge then is to use the tools we have been given to _propagate_ the button press event from one component to another.
 
 #### The Event Handler
 
@@ -215,12 +275,15 @@ const onButtonClick = () => {
 
 **Wait** What is `props.onUpdateStudent`?  Take a look at your code and try to walk through what is happening.
 
-<details>
-  <summary>Our walkthrough</summary>
+<!-- available callout types: info, success, warning, danger, secondary  -->
+### !callout-info
 
-  1.  Remember that we added a function `updateStudent` to the `App` component.  This function updates the student list.
-  2.  Then we passed the function into `StudentCollection` component as a prop with:  `<StudentCollection students={studentList} onUpdateStudent={updateStudent} />`
-  3.  The `StudentCollection` component forwards that prop to each student component with 
+## Our Process
+
+1.  Remember that we added a function `updateStudent` to the `App` component.  This function updates the student list.
+2.  Then we passed the function into `StudentCollection` component as a prop with:  `<StudentCollection students={studentList} onUpdateStudent={updateStudent} />`
+3.  The `StudentCollection` component forwards that prop to each student component with
+ 
 ```javascript
 <Student
   fullName={student.fullName}
@@ -232,20 +295,12 @@ const onButtonClick = () => {
 ```
 
 This workflow is shown in the image below.
+### !end-callout
 
-</details>
+Once we call `onUpdateStudent`, execution will be passed back to the `App` component. The student we are interested in updating is something we can match using `props.id`. 
 
-**Question:** Once we call `onUpdateStudent`, execution will be passed back to the `App` component. What piece of data is going to help the `App` component determine exactly which student should be updated?
+Wait, why does this work at all? Shouldn't we lose access to `props` in the onButtonClick function due to scope?
 
-<details>
-<summary>Answer</summary>
-The student we are interested in updating is something we can match using `props.id`. 
-</details>
-
-**Question:** Wait, why does this work at all? Shouldn't we lose access to `props` in the onButtonClick function due to scope?
-
-<details>
-<summary>Answer</summary>
 `onButtonClick` is closed around `props`, so the `props` variable is still accessible! Remember, all we need to close is three things:
 
 1. Nest a function inside a function
@@ -258,8 +313,7 @@ So in our code we have:
 1. We reference `props` inside of `onButtonClick`
 1. We hand `onButtonClick` to the `<button>`, where it lives on after `Student` has finished running!
 
-Hey this is a closure!
-</details>
+Hey... this is a closure!
 
 #### The CSS
 
