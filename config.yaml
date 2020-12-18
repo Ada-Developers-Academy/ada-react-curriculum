@@ -78,6 +78,11 @@ Standards:
         Path: /02-react-week-1/events.md
       -
         Type: Lesson
+
+        UID: d946c4b4-e049-4250-ab1b-faffa64ab302
+        Path: /02-react-week-1/intro-to-state.md
+      -
+        Type: Lesson
         UID: b041fc7d-d843-4b0f-856f-505780313776
         Path: /02-react-week-1/nested-event-handling.md
       -
