@@ -70,6 +70,10 @@ Standards:
     ContentFiles:
       -
         Type: Lesson
+        UID: 67190057-82f8-49f6-a197-cb9e4fb3fcaf
+        Path: /02-react-week-1/state.md      
+      -
+        Type: Lesson
         UID: 2d5aea6b-dece-47a3-9335-4badbcc50153
         Path: /02-react-week-1/events.md
       -
