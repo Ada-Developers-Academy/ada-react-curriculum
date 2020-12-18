@@ -315,8 +315,8 @@ The above code outputs:
 The following code simulates merging new permissions into a user account.  With a partner examine the code and answer the questions:
 
 ```javascript
-const combinePreferences = function combinePreferences(user, ...preferences) {
-  preferences.forEach((preference) => {
+const combinePreferences = function combinePreferences(user, ...otherPrefs) {
+  otherPrefs.forEach((preference) => {
     user.preferences = { ...user.preferences, ...preference}
   });
   return user;
