@@ -1,4 +1,4 @@
-# React Timeline
+# React Tic Tac Toe
 
 
 Lets play a Game!  In this project you will practice using state & props creating a [tic-tac-toe game](https://github.com/ada-c14/react-tic-tac-toe).
@@ -9,7 +9,7 @@ Lets play a Game!  In this project you will practice using state & props creatin
 ### !challenge
 
 * type: testable-project
-* id: 80644342-efac-471a-970f-640fe9c73ec6
+* id: 45b4026d-ffa9-4054-8400-0a99a864facd
 * title: React Timeline
 * upstream: https://github.com/adagold/react-tic-tac-toe
 * validate_fork: false
@@ -43,7 +43,7 @@ Link to your github repo
 ### !challenge
 
 * type: short-answer
-* id: 2b65639d-90f0-43bb-88be-0b0fe4e912e1
+* id: 666c40f5-2e8f-411c-8eaa-bf98339ad22c
 * title: React Timeline PR
 * points: 3
 * topics: javascript
