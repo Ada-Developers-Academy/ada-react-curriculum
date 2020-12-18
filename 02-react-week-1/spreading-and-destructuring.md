@@ -149,64 +149,6 @@ const newList = [newStudent, ...studentList];
 console.log(newList); // Ada,Charles,Grace,Katherine,Alexandra
 ```
 
-
-
-<!-- BEGIN CHALLENGE -->
-
-### !challenge
-
-* type: short-answer
-* id: d590caab-d340-45b8-a57c-ee88596c2b50
-* title: Combine Two Arrays
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-
-```javascript
-const morningTracks = ['Master of Puppets', 'Black Metal', 'Paranoid'];
-const eveningTracks = ['Ella Mai', 'American Teen', '17'];
-
-// Merge the above arrays into a single array
-
-```
-
-##### !end-question
-
-##### !answer
-
-/.+/
-
-##### !end-answer
-
-##### !placeholder
-
-you code here...
-
-##### !end-placeholder
-
-<!--optional-->
-##### !hint
-
-##### !end-hint
-
-<!--optional, checkpoints only-->
-##### !rubric
-
-##### !end-rubric
-
-<!--optional-->
-##### !explanation
-
-`const combined = [...morningTracks, ...eveningTracks];`
-
-##### !end-explanation
-
-### !end-challenge
-
-<!--  END CHALLENGE  -->
-
 ### Spread operator with strings
 
 You can also break a string into an array of individual characters with the spread operator.
