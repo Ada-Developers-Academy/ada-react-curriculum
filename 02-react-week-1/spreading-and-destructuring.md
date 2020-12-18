@@ -306,7 +306,7 @@ The above code outputs:
     Click here to see the answer.
   </summary>
 
-  The `...` operator is making a _shallow_ copy of the original object.  It does not copy all the values of `student`'s properties.  It instead copies the _reference_ to the `address` object and the `grades` array.  To make a _deep copy_ of the original object you would need to do things [differently.](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)
+  The `...` operator is making a _shallow_ copy of the original object.  It does not copy all the values of `student`'s properties.  It instead copies the _reference_ to the `address` object and the `grades` array.  To make a _deep copy_ of the original object you would need to do things [differently.](https://medium.com/technofunnel/deep-and-shallow-copy-in-javascript-110f395330c5)
 </details>
 
 
