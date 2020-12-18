@@ -43,7 +43,11 @@ const Student = (props) => {
   return (
     <div>
       <h3>{props.fullName}</h3>
-      <p>{props.email}</p>
+      <ul>
+        <li>Class: C14</li>
+        <li>Birthday: {props.birthday}</li>
+        <li>Email: {props.email}</li>
+      </ul>
     </div>
   );
 };
