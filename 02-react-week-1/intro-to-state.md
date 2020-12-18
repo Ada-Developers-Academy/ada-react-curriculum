@@ -72,8 +72,8 @@ class Student extends React.Component {
   //It's okay to not understand what's going on here yet. 
   //Long story short, I can find out the contents of my <input> 
   //and send them back to the component's state!
-  onNameChange = () => {
-    this.setState({fullname: event.target.value})
+  onSetPresent = () => {
+    this.setState({present: !this.state.present})
   }
 
   render() {
