@@ -74,20 +74,16 @@ Standards:
         Path: /02-react-week-1/events.md
       -
         Type: Lesson
-        UID: 3197b7fa-984c-4dba-82a7-2607b4ce5129
-        Path: /02-react-week-1/controlled-forms-exercise.md
-      -
-        Type: Lesson
-        UID: 7896168e-4bec-42e7-8986-887501f715b8
-        Path: /02-react-week-1/events.md
-      -
-        Type: Lesson
         UID: b041fc7d-d843-4b0f-856f-505780313776
         Path: /02-react-week-1/nested-event-handling.md
       -
         Type: Lesson
         UID: 8e53f4cb-e5f8-4394-8e6f-1957935bed06
         Path: /02-react-week-1/forms.md
+      -
+        Type: Lesson
+        UID: 3197b7fa-984c-4dba-82a7-2607b4ce5129
+        Path: /02-react-week-1/controlled-forms-exercise.md
       -      
         Type: Checkpoint
         UID: f495355e-01d9-476b-baab-e54b830b12b6
