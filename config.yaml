@@ -78,6 +78,10 @@ Standards:
         Path: /02-react-week-1/controlled-forms-exercise.md
       -
         Type: Lesson
+        UID: 7896168e-4bec-42e7-8986-887501f715b8
+        Path: /02-react-week-1/events.md
+      -
+        Type: Lesson
         UID: b041fc7d-d843-4b0f-856f-505780313776
         Path: /02-react-week-1/nested-event-handling.md
       -
