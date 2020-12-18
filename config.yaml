@@ -84,3 +84,7 @@ Standards:
         Type: Lesson
         UID: 8e53f4cb-e5f8-4394-8e6f-1957935bed06
         Path: /02-react-week-1/forms.md
+      -      
+        Type: Checkpoint
+        UID: f495355e-01d9-476b-baab-e54b830b12b6
+        Path: /02-react-week-1/react-tic-tac-toe.checkpoint.md
