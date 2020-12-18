@@ -148,7 +148,10 @@ const newList = [newStudent, ...studentList];
 
 console.log(newList); // Ada,Charles,Grace,Katherine,Alexandra
 ```
-<!--BEGIN CHALLENGE-->
+
+
+
+<!-- BEGIN CHALLENGE -->
 
 ### !challenge
 
@@ -203,7 +206,6 @@ you code here...
 ### !end-challenge
 
 <!--END CHALLENGE-->
-<br/><br/>
 
 ### Spread operator with strings
 
