@@ -205,7 +205,7 @@ you code here...
 
 ### !end-challenge
 
-<!--END CHALLENGE-->
+<!--  END CHALLENGE  -->
 
 ### Spread operator with strings
 
