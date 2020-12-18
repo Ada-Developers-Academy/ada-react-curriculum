@@ -87,8 +87,8 @@ class Student extends React.Component {
           <li>Birthday: {this.props.birthday}</li>
           <li>Email: {this.props.email}</li>
       </ul>
-      // We will dig into what's going on in this line in the Events lesson.  
-      // For now it's enough to know that clicking the button will call the updatePresent function!
+      {/* We will dig into what's going on in this line in the Events lesson.  
+          For now it's enough to know that clicking the button will call the updatePresent function!*/}
       <button onClick={this.updatePresent}>
           Mark {this.state.present ? 'Absent' : 'Present'}
       </button>
