@@ -11,17 +11,17 @@ React allows us to handle many different types of events. We'll focus on a coupl
 
 ### Context
 
-In this lecture, we are going to expand upon the `Student` component that we created in the [state lecture](state.md). This was a great component that we created that was storing a student's present status in the component. We used the boolean in the function to determine what to display.
+In this lecture, we are going to dig into the `Student` component that we created in the [state lecture](state.md) and figure out what was going on with the `<button onClick={changePresent}>` line.
 
 ### Adding More Meaning
 
 #### Toggle our Boolean
 
-The boolean value that we're storing in the state seems a little bit useless right now. We set it to `true` as an initial value and we don't ever change it! We have a button and it doesn't do anything!  Next we will add code to change the state of `present` when the button is clicked on.
+We start by storing the boolean value in state (note that we've added `present` to `props` and we're using that as the initial value of our state variable.)
 
 ### onClick Event
 
-Now we'll add the `onClick` attribute to the button whose value will refer to an event handler function that we will create next.
+Let's look at the `onClick` attribute to the button whose value refers to the event handler function `updatePresent`.
 
 ```javascript
 // src/components/Student.js
@@ -30,7 +30,7 @@ const Student = (props) => {
   const [present, setPresent] = useState(props.present);
 
   // Function to toggle present
-  const onButtonClick = () => setPresent(!present); 
+  const updatePresent = () => setPresent(!present); 
 
     // Component functions always return JSX
     return (
@@ -41,7 +41,7 @@ const Student = (props) => {
           <li>Birthday: {props.birthday}</li>
           <li>Email: {props.email}</li>
         </ul>
-        <button onClick={onButtonClick}>
+        <button onClick={updatePresent}>
           Mark {present ? 'Absent' : 'Present'}
         </button>
       </div>
@@ -62,13 +62,13 @@ topics: react, events
 
 ##### !question
 
-Notice: There are only 2 lines that have changed from the state lesson: 
+Let's look at these two lines of code: 
 
-`const onButtonClick = () => setPresent(!present); ` (toward the top)
+`const updatePresent = () => setPresent(!present); ` (toward the top)
 
-`<button onClick={onButtonClick}>` (toward the bottom)
+`<button onClick={updatePresent}>` (toward the bottom)
 
-What is this new code doing? 
+What is this code doing? 
 
 Refer back to the [state lecture](state.md) if you can't remember what the `setPresent` function is supposed to do. 
 
@@ -85,7 +85,7 @@ Refer back to the [state lecture](state.md) if you can't remember what the `setP
 ##### !end-answer
 
 ##### !explanation 
-It's defining a function named onButtonClick which changes the `present` value to the opposite of whatever it currently is. That function isn't called yet. Instead, it's referenced down below as the `onClick` function for the button we created in the previous lesson. This type of function is termed a _callback function_. It won't be executed until the event occurs. This is the same for all events defined here in our React components.
+It's defining a function named updatePresent which changes the `present` value to the opposite of whatever it currently is. That function isn't called yet. Instead, it's referenced down below as the `onClick` function for the button we created in the previous lesson. This type of function is termed a _callback function_. It won't be executed until the event occurs. This is the same for all events defined here in our React components.
 ##### !end-explanation 
 
 ### !end-challenge
@@ -95,12 +95,12 @@ It's defining a function named onButtonClick which changes the `present` value t
 
 ### !callout-info
 ## Note on arrow function syntax
-**Note** the arrow function syntax for this event handler function. You could define the event handler function `onButtonClick` as a regular function, but making it an arrow function in this case is a bit more concise and keeps the `this` context to the current component.  
+**Note** the arrow function syntax for this event handler function. You could define the event handler function `updatePresent` as a regular function, but making it an arrow function in this case is a bit more concise and keeps the `this` context to the current component.  
 ### !end-callout
 
 Now that we have an event handler function defined and tied to this button, let's take a look at our application running on the server to see what the result is. What happens when the button is clicked?
 
-Above we made a function, `onButtonClick` which calls `setPresent` and passes in the opposite of the current state.  Then we told the button when it is clicked to call that function.
+Above we made a function, `updatePresent` which calls `setPresent` and passes in the opposite of the current state.  Then we told the button when it is clicked to call that function.
 
 Now whenever the user clicks on the button the student's present state toggles between true and false!
 
