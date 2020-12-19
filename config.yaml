@@ -69,10 +69,6 @@ Standards:
       - success criteria
     ContentFiles:
       -
-        Type: Lesson
-        UID: eda6970a-9846-446c-9767-53f6f03003fc
-        Path: /02-react-week-1/spreading-and-destructuring.md
-      -
         UID: d946c4b4-e049-4250-ab1b-faffa64ab302
         Path: /02-react-week-1/intro-to-state.md
       -
