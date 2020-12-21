@@ -1,5 +1,9 @@
 # Intro to State
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=59e231a4-87bb-4bf2-aab7-ac98018b3a4c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+## Learning Goals
+
 After this lesson, students will be able to:
 
 - Give a high-level explanation of what state means
