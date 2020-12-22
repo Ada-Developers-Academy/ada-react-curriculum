@@ -3,6 +3,8 @@
 
 Lets play a Game!  In this project you will practice using state & props creating a [tic-tac-toe game](https://github.com/ada-c14/react-tic-tac-toe).
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=d00c4aba-20ff-4905-ac13-ac990010afb8&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- Replace everything in square brackets [] and remove brackets  -->
 
