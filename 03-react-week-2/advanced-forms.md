@@ -52,13 +52,94 @@ const onInputChange = (event) => {
 }
 ```
 
-**Question:** What is stored in `event.target.name`?
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
 
-**Question:** Why do we need to use subscript notation (square brackets) to update the state? In the past we used dot notation, which was more concise. What has changed?
+### !challenge
+
+* type: short-answer
+* id: ebeeac6e-9dfa-4730-b3ad-4f6d3b2d382e
+* title: event.target.name
+* points: 1
+* topics: react, react-forms
+
+##### !question
+
+What is stored in `event.target.name`?
+##### !end-question
+
+##### !placeholder
+
+What is stored in event.target.name?
+
+##### !end-placeholder
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+##### !explanation
+
+When an input field is defined in the JSX with `<input name="example_name" value={value} onChange={eventHandler} />` and the callback function is passed an object `event` which describes the circumstates of the event.  
+
+`event.target` is the DOM object which triggered the event.  `event.target.name` returns the `name` attribute of the `input` element, "example_name" in this case.
+
+##### !end-explanation
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: short-answer
+* id: 0330ed08-109a-4d18-832d-4bf3aea32af5
+* title: Why use the subscript notation?
+* points: 1
+* topics: react, react-forms
+
+##### !question
+
+Why do we need to use subscript notation (square brackets) to update the state? In the past we used dot notation, which was more concise. What has changed?
+
+##### !end-question
+
+##### !placeholder
+
+Why use []?
+
+##### !end-placeholder
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+##### !explanation
+
+Because if we use the `.` operator, we cannot use a variable name for the  state attribute to change.  Instead we can use the `[]` and put a variable in the middle.
+
+##### !end-explanation
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
 
 ### Wait what does `...formFields` do?
 
-The code below is a a bit of JavaScript syntax called the rest operator which allow us to duplicate the `formFields` object.  
+The code below is a a bit of JavaScript syntax called the **rest operator** which allow us to duplicate the `formFields` object.  
 
 ```javascript
 const newFormFields = {
@@ -128,7 +209,48 @@ And give the user feedback on validation with:
 />
 ```
 
-**Question:**  What does this line with `className=` do?
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: short-answer
+* id: ebf8920b-e374-47fe-bab3-4e1dcf6ac7ca
+* title: What does `className=` do?
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+What does this line with `className=` do?
+
+##### !end-question
+
+##### !placeholder
+
+What does this line with `className=` do?
+
+##### !end-placeholder
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, hidden, students click to view) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+##### !explanation
+
+The ternary in the `className=` allows you to render the form field with a different class, depending on the return value of the `emailValid()` function call.   This way you can give the user visual feedback if the field is valid or not.
+
+##### !end-explanation
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
 
 The form is re-rendered every time the state of the component changes, and this code will run `this.emailValid()` and if the email field is valid the input will have a class of `valid`, and if not it will have the class of `invalid`.  With a little CSS we can give the user valuable feedback as to the status of a form field.
 
