@@ -274,6 +274,8 @@ You can see this implementation running on [code sandbox](https://codesandbox.io
 
 Controlled forms give us programatic access to what the user's typing, as they type it. That opens up a whole world of opportunities for improving the user experience.
 
+It also allows us to DRY up our code by using the `event.target.name` field to identify and update our state.
+
 ## Additional Resources
 
 - [Instant Form Field Validation with React](https://medium.freecodecamp.org/how-to-use-reacts-controlled-inputs-for-instant-form-field-validation-b1c7b033527e)
