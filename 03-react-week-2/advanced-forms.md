@@ -3,6 +3,9 @@
 In a previous lesson we talked about the idea of a controlled form, and built one as a React component. In this lesson we'll update the code to be a little DRYer, and to provide a better user experience.
 
 ## Learning Goals
+
+By the end of this lesson we will be able to...
+
 - Use our JavaScript knowledge to DRY up our controlled form
 - Dynamically provide user feedback as they complete a form with validations
 
