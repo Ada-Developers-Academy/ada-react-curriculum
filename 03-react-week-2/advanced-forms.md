@@ -131,6 +131,19 @@ Why use []?
 
 Because if we use the `.` operator, we cannot use a variable name for the  state attribute to change.  Instead we can use the `[]` and put a variable in the middle.
 
+For example: 
+
+```javascript
+const newFormFields = {
+    ...formFields,
+  }
+
+newFormFields[event.target.name] = event.target.value;
+setFormFields(newFormFields);
+```
+
+This sets `newformFields` to the old value of the form state and then updates the one field that changed.
+
 ##### !end-explanation
 
 ### !end-challenge
