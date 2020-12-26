@@ -100,3 +100,14 @@ Standards:
         Type: Checkpoint
         UID: f495355e-01d9-476b-baab-e54b830b12b6
         Path: /02-react-week-1/react-tic-tac-toe.checkpoint.md
+  - 
+    Title: React Week 2
+    Description: Nested Components & Forms
+    UID: 1b8921be-9d97-4af0-ae04-2bda1cecc08b
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 909a03bb-ea07-44f8-a53b-50128c04a2ae
+        Path: /03-react-week-2/advanced-forms.md
