@@ -85,7 +85,7 @@ What is stored in event.target.name?
 <!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
 ##### !explanation
 
-When an input field is defined in the JSX with `<input name="example_name" value={value} onChange={eventHandler} />` and the callback function is passed an object `event` which describes the circumstates of the event.  
+When an input field is defined in the JSX with `<input name="example_name" value={value} onChange={eventHandler} />` and the callback function is called, an object `event` which describes the circumstates of the event is passed into the function as an argument.
 
 `event.target` is the DOM object which triggered the event.  `event.target.name` returns the `name` attribute of the `input` element, "example_name" in this case.
 
