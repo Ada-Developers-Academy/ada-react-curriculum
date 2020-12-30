@@ -1,5 +1,7 @@
 # Advanced Forms
 
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?pid=8ccd33fe-9aee-4b78-8ef1-aca10019cd9a&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 In a previous lesson we talked about the idea of a controlled form, and built one as a React component. In this lesson we'll update the code to be a little DRYer, and to provide a better user experience.
 
 ## Learning Goals
