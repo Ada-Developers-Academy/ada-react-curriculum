@@ -9,8 +9,16 @@
 
 So far our Ada Students project has been set to pull either static data from the `App` component, or from localStorage.  It then passes those students into `StudentCollection` and then into individual student components.  Now we're going to modify this to utilize an API instead.  For the purposes of learning we're going to use the [json-server](https://github.com/typicode/json-server) package which can take a json file and generate a sample REST server based on it.  This will let us simulate an API on our local machines without having to run one on the internet and have students across the cohort access the same API.
 
+<!-- available callout types: info, success, warning, danger, secondary  -->
+### !callout-info
+
+## It's Perilous to Go Alone!
+This lesson was initially structured as an in-class exercise! Feel free to reach out to other students about the contents of this lesson and [the next](./apis-post.md) and work thru them as a small team!
+
+### !end-callout
+
 1. First, let's find our students app from earlier. Locate and navigate to the folder in the terminal.
-2. Next check out the `11-api-start` branch with `git checkout origin 11-api-start`.  This will load a version of Ada Students which is already working, but using localstorage, exactly after the [`useEffect` lesson](./useEffect.md).
+2. Next check out the `11-api-start` branch with `git checkout origin 11-api-start`.  This will load a version of [Ada Students](https://github.com/AdaGold/ada-students) which is already working, but using localstorage, exactly after the [`useEffect` lesson](./useEffect.md).
 3. Next, we'll install the axios package by running `npm install axios --save`.
 5. Verify! Open `package.json` and ensure we see axios and json server in the "dependencies" & "dev dependencies" sections.
 
@@ -38,15 +46,123 @@ This should be familiar to you from the `Ada-Pets-node` project.
 
 We have added a `.env` file to start React scripts on port 2999.
 
-**Exercise**
 
-With your neighbor, and using Postman, access the API to list and show several students.  
+Take some time to explore the following questions using Postman. Practice accessing the API to list and show several students.  
 
-Answer: 
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
 
-- What is the URL to list all students?
-- What is the URL to list a single students?
-- What happens when you try to access a students that does not exist?
+### !challenge
+
+* type: short-answer
+* id: 623187a7-86e4-4241-8c00-d0f7616ccb3d
+* title: Question 1
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+What is the URL to list all students? 
+
+Remove the brackets below, and replace `VERB` and `path` with your answer.
+
+##### !end-question
+
+##### !placeholder
+
+[VERB] localhost:3000/[path]
+
+##### !end-placeholder
+
+##### !answer
+
+GET localhost:3000/students
+
+##### !end-answer
+
+##### !hint 
+Make sure to include the verb in all caps. What verb do we use when fetching data?
+##### !end-hint
+##### !hint 
+Your path will match the outermost key in the `students.json` file.
+##### !end-hint
+##### !hint 
+GET localhost:3000/students
+##### !end-hint
+
+### !end-challenge
+
+### !challenge
+
+* type: short-answer
+* id: 49ed3396-1009-4090-ad2e-2227dd69d1e7
+* title: Question 2
+
+##### !question
+
+What is the URL to list the student named Grace Hopper?
+
+Remove the brackets below, and replace `VERB` and `path` with your answer.
+
+##### !end-question
+
+##### !placeholder
+
+[VERB] localhost:3000/[path]
+
+##### !end-placeholder
+
+##### !answer
+
+GET localhost:3000/students/2
+##### !end-answer
+
+##### !hint 
+Make sure to include the verb in all caps. What verb do we use when fetching data?
+##### !end-hint
+##### !hint 
+Look at the `students.json` file. What ID is Grace Hopper assigned?
+##### !end-hint
+##### !hint 
+GET localhost:3000/students/2
+##### !end-hint
+
+### !end-challenge
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: short-answer
+* id: 30d59ce8-14cb-4003-9c7f-d12fcd794f4f
+* title: Question 3
+
+##### !question
+
+What happens when you try to access a students that does not exist?
+
+##### !end-question
+
+##### !placeholder
+
+Well... gee...
+
+##### !end-placeholder
+
+##### !answer
+
+/.+/
+
+##### !end-answer
+
+
+##### !explanation 
+You receive back an empty object. If you were implementing a server, this would be **INCREDIBLY RUDE AND SLOPPY**, but since we're just `json-server` to test things out and play around with data, it's fine behavior for a tool as long as we note it.
+##### !end-explanation
+
+### !end-challenge
+
 
 ### Replacing the localstorage Student data
 
@@ -121,7 +237,7 @@ const App = () => {
 
 Next, let's consider how we want our axios request to be structured within this lifecycle method.
 
-**Questions:**
+Make some predictions about the following:
 1. What do you think should happen in the `then` block when the API request is successful? Where will we store this data?
 2. What do you think should happen in the `catch` block when there is an error?
 
@@ -195,9 +311,9 @@ return (
   );
 ```
 
-**Question**
+<!-- **Question**
 
-With your neighbor discuss: How would you handle errors from the API indicating a bad request?
+With your neighbor discuss: How would you handle errors from the API indicating a bad request? -->
 
 ## Key Takeaway
 
