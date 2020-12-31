@@ -51,7 +51,7 @@ useEffect( /* Function to run when the component is mounted */  () => {
 
 ### Updating
 
-Alternatively, we can use the useEffect hook to watch for props or state variables and when they change we can use the `useEffect` hook to run a function when those variables change.  
+When props or state changes the component is re-rendered on the screen. We can also use the useEffect hook to watch for props or state variables and when they change we can use the `useEffect` hook to run a function when those variables change.  
 
 So if we wanted to run a function when our `students` state variable changes we could do the following: 
 
@@ -63,7 +63,7 @@ useEffect( /* Function to run when the `students` change */  () => {
 );
 ```
 
-Note: This function will execute in the `componentDidUpdate` stage.
+Note: This function will execute in the `componentDidUpdate` stage. (See diagram at top of lesson.)
 
 ### Unmounting
 
@@ -72,7 +72,7 @@ When a component is unmounted or removed from the DOM, sometimes you want to do 
 1.  Save information to an external resource prior to exit
 1.  Cancel any pending API requests that haven't returned yet
 
-To provide a cleanup method for unmounting your `useEffect` callback function should return a function to call when the component is unmounted. This 
+To provide a cleanup method for unmounting, your `useEffect` callback function should return a function to call when the component is unmounted. 
 
 ```javascript
 useEffect( /* Function to run when the component is mounted */  () => {  
@@ -87,7 +87,7 @@ useEffect( /* Function to run when the component is mounted */  () => {
 );
 ```
 
-Note: This function will execute in the `componentWillUnmount` stage.
+Note: This function will execute in the `componentWillUnmount` stage. (See diagram at top of lesson.)
 
 The need for cleanup like this is relatively rare in the applications we are learning to write but we wanted to make you aware of it.
 
@@ -172,6 +172,7 @@ useEffect(() -> {
 
   return () -> console.log("B");
 }, []);
+```
 
 ##### !end-question
 
@@ -206,11 +207,13 @@ When an empty array is passed in as a second parameter to useEffect, when will t
 
 In other words, if the the code segment below were written within a component, when would "A" print to the console?
 
+```javascript
 useEffect(() -> {
   console.log("A");
 
   return () -> console.log("B");
 }, []);
+```
 
 ##### !end-question
 
