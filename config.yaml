@@ -111,11 +111,15 @@ Standards:
         Type: Lesson
         UID: 909a03bb-ea07-44f8-a53b-50128c04a2ae
         Path: /03-react-week-2/advanced-forms.md
-      -      
+      -
         Type: Lesson
-        UID: 5f45d08f-942a-4dea-b51e-d08d1cdd5842
-        Path: /03-react-week-2/inspiration-board.md
+        UID: 00197058-9583-4c43-90d3-0f2882b52d49
+        Path: /03-react-week-2/useEffect.md
       -      
         Type: Checkpoint
         UID: 9c6b8f67-47a8-4794-b091-3bd05a61e141
         Path: /03-react-week-2/exquisite-react.checkpoint.md
+      -      
+        Type: Lesson
+        UID: 5f45d08f-942a-4dea-b51e-d08d1cdd5842
+        Path: /03-react-week-2/inspiration-board.md
