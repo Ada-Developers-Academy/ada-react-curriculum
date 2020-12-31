@@ -43,7 +43,7 @@ useEffect( /* Function to run when the component is mounted */  () => {
     // Code to run upon mount
   },
   [] /* 
-        The empty array indicates the above function sould be run once when the component is    mounted.
+        The empty array indicates the above function sould be run once when the component is mounted.
         It will not be run during future renders of the same component.
       */
 );
