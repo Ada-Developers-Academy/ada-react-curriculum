@@ -76,7 +76,7 @@ Remove the brackets below, and replace `VERB` and `path` with your answer.
 
 ##### !answer
 
-GET localhost:3000/students
+/GET\s+localhost\:3000\/students\/?/i
 
 ##### !end-answer
 
@@ -114,7 +114,7 @@ Remove the brackets below, and replace `VERB` and `path` with your answer.
 
 ##### !answer
 
-GET localhost:3000/students/2
+/GET\s+localhost:3000\/students\/2\/?/
 ##### !end-answer
 
 ##### !hint 
@@ -158,7 +158,9 @@ Well... gee...
 
 
 ##### !explanation 
+
 You receive back an empty object. If you were implementing a server, this would be **INCREDIBLY RUDE AND SLOPPY**, but since we're just `json-server` to test things out and play around with data, it's fine behavior for a tool as long as we note it.
+
 ##### !end-explanation
 
 ### !end-challenge
