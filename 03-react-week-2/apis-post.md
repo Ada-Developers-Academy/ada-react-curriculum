@@ -1,4 +1,4 @@
-# Integrating with an API in React
+# Using Post in React
 
 ## Learning Goals
 

@@ -1,4 +1,4 @@
-# Integrating with an API in React
+# Using Get: APIs in React
 
 ## Learning Goals
 
