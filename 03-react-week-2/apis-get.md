@@ -76,7 +76,7 @@ Remove the brackets below, and replace `VERB` and `path` with your answer.
 
 ##### !answer
 
-/GET\s+(http:\/\/)?localhost\:3000\/students\/?/i
+/GET\s+(http\:\/\/)?localhost\:3000\/students\/?/i
 
 ##### !end-answer
 
@@ -114,7 +114,7 @@ Remove the brackets below, and replace `VERB` and `path` with your answer.
 
 ##### !answer
 
-/GET\s+(http:\/\/)?localhost:3000\/students\/2\/?/
+/GET\s+(http\:\/\/)?localhost:3000\/students\/2\/?/i
 ##### !end-answer
 
 ##### !hint 
