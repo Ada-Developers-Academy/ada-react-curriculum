@@ -1,4 +1,4 @@
-# Integrating with an API in React
+# Using Post in React
 
 ## Learning Goals
 
@@ -6,7 +6,7 @@
 
 ### Setup
 
-We are starting with the students application that we have already created and integrated with a GET request from the [json-server package](https://www.npmjs.com/package/json-server).  This application already contains the event handlers to submit the form data from a controlled form. In this discussion, we'll be enhancing some of this logic to send a POST request to the API to add a new student. We'll also need to ensure that our overall student list is refreshed from the API once we add a new student.
+We are starting with the students application that we have already created and integrated with a GET request from the [json-server package](https://www.npmjs.com/package/json-server).  This application already contains the event handlers to submit the form data from a controlled form. In this lesson, we'll be enhancing some of this logic to send a POST request to the API to add a new student. We'll also need to ensure that our overall student list is refreshed from the API once we add a new student.
 
 ### Add a Student
 
@@ -59,19 +59,19 @@ The `post` request function in axios is a bit different than the `get` request. 
 
 Take a look at the logic we put in the `then` and `catch` sections in the `useEffect` function when we made the GET request. What will be similar and different for the POST request?
 
-Working with your neighbor give it a try, remember that you will need an `id` field for the student to add it to `studentList`, as each `Student` component requires an id.  How can you get an ID from the API?  Try making a `post` request with Postman to look for the answer.
+Give it a try, remember that you will need an `id` field for the student to add it to `studentList`, as each `Student` component requires an id.  How can you get an ID from the API?  Try making a `post` request with Postman to look for the answer.
 
-When you are ready you can look at our [solution](examples/addStudent.js).
+When you are ready you can look at our [solution](https://gist.github.com/dHelmgren/2c447b127acbbecd6ce5f6e5bc276dbc).
 
 **Checking In**
 
-Now observe what happens when we submit the form in our application. Check in with your neighbors to be sure that you've got the post request set up successfully.
+Now observe what happens when we submit the form in our application. Check in with your peers to be sure that you've got the post request set up successfully.
 
 ### Extension
 
 - How can you handle validation errors in a real API, like we made before?
 - How could you delete pets from the API with your React App?
-  - With your neighbor implement this functionality.
+  - Implement this functionality.
 
 ## Exercise
 

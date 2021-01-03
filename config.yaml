@@ -102,8 +102,8 @@ Standards:
         Path: /02-react-week-1/react-tic-tac-toe.checkpoint.md
   - 
     Title: React Week 2
-    Description: Nested Components & Forms
-    UID: 1b8921be-9d97-4af0-ae04-2bda1cecc08b
+    Description: Hooks, Forms and API's
+    UID: 5b5f75d5-100b-4e75-849e-a8a1d8e4f425
     SuccessCriteria:
       - success criteria
     ContentFiles:
@@ -111,10 +111,18 @@ Standards:
         Type: Lesson
         UID: 909a03bb-ea07-44f8-a53b-50128c04a2ae
         Path: /03-react-week-2/advanced-forms.md
-      -
+      -      
         Type: Lesson
         UID: 00197058-9583-4c43-90d3-0f2882b52d49
         Path: /03-react-week-2/useEffect.md
+      - 
+        Type: Lesson
+        UID: 5ae06a42-94f2-4927-8831-12987d7538fb
+        Path: /03-react-week-2/apis-get.md
+      -
+        Type: Lesson
+        UID: 0e9e569d-bd26-4c57-8b2d-77ccb15fcde9
+        Path: /03-react-week-2/apis-post.md
       -      
         Type: Checkpoint
         UID: 9c6b8f67-47a8-4794-b091-3bd05a61e141
