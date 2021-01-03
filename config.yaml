@@ -107,6 +107,10 @@ Standards:
     SuccessCriteria:
       - success criteria
     ContentFiles:
+      -
+        Type: Lesson
+        UID: 909a03bb-ea07-44f8-a53b-50128c04a2ae
+        Path: /03-react-week-2/advanced-forms.md
       - 
         Type: Lesson
         UID: 5ae06a42-94f2-4927-8831-12987d7538fb
@@ -115,10 +119,6 @@ Standards:
         Type: Lesson
         UID: 0e9e569d-bd26-4c57-8b2d-77ccb15fcde9
         Path: /03-react-week-2/apis-post.md
-      -
-        Type: Lesson
-        UID: 909a03bb-ea07-44f8-a53b-50128c04a2ae
-        Path: /03-react-week-2/advanced-forms.md
       -      
         Type: Lesson
         UID: 5f45d08f-942a-4dea-b51e-d08d1cdd5842
