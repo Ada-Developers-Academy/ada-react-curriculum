@@ -131,3 +131,18 @@ Standards:
         Type: Lesson
         UID: 5f45d08f-942a-4dea-b51e-d08d1cdd5842
         Path: /03-react-week-2/inspiration-board.md
+  - 
+    Title: React Week 3
+    Description: Putting it all together
+    UID: 3c08947c-af18-4eb1-966b-c039fcb112d5
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 46c4b4f5-cb3f-4ddb-abd1-f2fbaa3208e1
+        Path: /04-react-week-3/js-ecosystem.md
+      -
+        Type: Resource
+        UID: 0a969df0-f5f3-4de0-b1fb-930ff3132cfa
+        Path: /04-react-week-3/cra-build-system.md
