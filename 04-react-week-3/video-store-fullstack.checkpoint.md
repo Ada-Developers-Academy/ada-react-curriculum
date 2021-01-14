@@ -58,7 +58,7 @@ Place the URL of your Pull Request here.
 
 ##### !placeholder
 
-Pull request to video-store-consumer here
+Pull request to video-store-consumer React Front-end here
 
 ##### !end-placeholder
 
