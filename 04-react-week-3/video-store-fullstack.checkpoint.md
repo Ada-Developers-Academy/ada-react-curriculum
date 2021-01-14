@@ -132,7 +132,7 @@ Place the URL of your Video Store consumer API Rails Back-end project here.
 
 ##### !placeholder
 
-Rails API PR Request Here
+Video Store consumer API Rails Back-end Pull Request Here
 
 ##### !end-placeholder
 
