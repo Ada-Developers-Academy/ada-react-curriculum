@@ -146,3 +146,9 @@ Standards:
         Type: Resource
         UID: 0a969df0-f5f3-4de0-b1fb-930ff3132cfa
         Path: /04-react-week-3/cra-build-system.md
+      -
+        Type: Checkpoint
+        UID: bac2eff9-574b-429f-8ec8-a37de51ba9a7
+        Path: /04-react-week-3/video-store-fullstack.checkpoint.md
+
+  
