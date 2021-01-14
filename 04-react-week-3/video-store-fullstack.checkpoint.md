@@ -94,7 +94,7 @@ Pull request to video-store-consumer React Front-end here
 
 ##### !question
 
-Place a link to your Rails API repository here.
+Place a link to your Rails API Back-end repository here.
 
 ##### !end-question
 
