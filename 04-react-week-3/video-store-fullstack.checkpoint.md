@@ -100,7 +100,7 @@ Place a link to your Rails API repository here.
 
 ##### !placeholder
 
-URL of your Rails API project
+URL of your Rails API Back-end project
 
 ##### !end-placeholder
 
