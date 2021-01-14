@@ -86,7 +86,7 @@ Pull request to video-store-consumer here
 
 * type: testable-project
 * id: 6ee0aff2-bc21-48c2-af19-34fab9ef820f
-* title: Video Store API Back-end
+* title: Video Store API Rails Back-end
 * upstream: https://github.com/ada-c14/video-store-consumer-api/
 * validate_fork: true
 * points: 0
