@@ -52,7 +52,7 @@ React front-end URL
 
 ##### !question
 
-Place the URL of your Pull Request here.
+Place the URL of your React Front-end Pull Request here.
 
 ##### !end-question
 
