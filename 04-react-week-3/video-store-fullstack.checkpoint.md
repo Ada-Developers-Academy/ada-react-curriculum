@@ -126,7 +126,7 @@ URL of your Rails API Back-end project
 
 ##### !question
 
-Place the URL of your Video Store consumer API project here.
+Place the URL of your Video Store consumer API Rails Back-end project here.
 
 ##### !end-question
 
