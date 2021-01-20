@@ -13,12 +13,12 @@ An example of one of these end-user packages is the [ZIP file](https://code.visu
 The need for a build system and the specifics of what it does are highly specific to each project and are often impacted by technology choices such as programming language, libraries used, and in particular the environment in which the program will be run by end users.
 
 ## Why do we need a build system for our client-side JS projects?
-In truth we don't _always_ need a build system for a JS project -- we didn't use one with the jQuery projects! More practically however, real-world JS projects frequently become large enough to benefit from a build system.
+In truth we don't _always_ need a build system for a JS project -- we didn't use one with our vanilla JS projects! More practically however, real-world JS projects frequently become large enough to benefit from a build system.
 
 The biggest reasons for needing a build system come from the fact that our code will actually be running within the user's web browser, rather than on our computer in the terminal or on a Heroku server as our Ruby projects did.
 
 ### JS file/module management
-As we learned in the jQuery curriculum, the browser will only be able to download and run your JavaScript code if you include a `<script>` tag for each file somewhere in the HTML code. And the order of those tags is important because the code will be run in exactly that order.
+As we learned in the pure JavaScript curriculum, the browser will only be able to download and run your JavaScript code if you include a `<script>` tag for each file somewhere in the HTML code. And the order of those tags is important because the code will be run in exactly that order.
 
 Consider a scenario where we want to create a project that uses an existing JavaScript library -- much like we did on various occasions in Ruby with `gem` and `bundle` . When we used the `gem` command to download a library like `colorize`, where did the code files for it go? Thankfully Ruby and our development tools like `rvm` were able to seamlessly make this work without us having to know.
 
@@ -65,7 +65,7 @@ Regardless of the techniques used the goal is always the same: Generate valid Ja
 
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 
-  When we develop our client-side JS applications it's necessary to actually access the application through our browser locally, so that we can see the behavior of our code. One way to accomplish this might be to directly open the HTML file in our browser, as we did for our jQuery projects and when learning HTML and CSS.
+  When we develop our client-side JS applications it's necessary to actually access the application through our browser locally, so that we can see the behavior of our code. One way to accomplish this might be to directly open the HTML file in our browser, as we did for our regular JS projects and when learning HTML and CSS.
 
   However, this approach has some downsides. Specifically, the browser is loading a _file_ URL which looks like `file:///Users/username/some/directory/to/a/file.html`, which is treated differently from an _http(s)_ URL. For large or potentially complex projects it's important to mimic the actual end-user experience as closely as possible so we really want the browser to access our site through HTTP just as it would any other website on the internet.
 
@@ -102,6 +102,7 @@ There's a lot of detail in the sections above, and while that can be helpful it'
 | [Babel](https://babeljs.io/) | A _transpiler_ for JavaScript that is intended to convert newer JS syntax (ES6+) into traditional JS syntax (ES5) for better compatibility across all browsers. |
 
 ## Resources
+
 - Build systems are a key component in [build automation](https://en.wikipedia.org/wiki/Build_automation), which ties into DevOps concepts such as [continuous integration](https://en.wikipedia.org/wiki/Continuous_Integration) and [continuous delivery](https://en.wikipedia.org/wiki/Continuous_Delivery).
 - [A recent tutorial on webpack 4](https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-the-right-way-4e94c8e7e5c1) that goes into depth about the tool's design and how to configure it.
 - [Tutorial for creating a webpack-based build system from scratch](https://hackernoon.com/how-to-build-a-react-project-from-scratch-using-webpack-4-and-babel-56d4a26afd32) (this also uses webpack 4 and Babel).
