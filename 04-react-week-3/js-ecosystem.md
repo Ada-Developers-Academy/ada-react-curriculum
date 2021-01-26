@@ -17,6 +17,15 @@ In truth we don't _always_ need a build system for a JS project -- we didn't use
 
 The biggest reasons for needing a build system come from the fact that our code will actually be running within the user's web browser, rather than on our computer in the terminal or on a Heroku server as our Ruby projects did.
 
+### !callout-info
+## Wait, what does "client-side" JS even mean?
+Good question! Client-side JavaScript is a term analogous to another term you have probably heard: "front-end". Both terms just mean that the JS code will run on the user's browser (ie. "the client") rather than running on a server somewhere. 
+
+### Ok, hold on! I've heard people talk about deploying client-side JS. Why would I need to deploy it if it doesn't even run on a server?
+Another excellent question! Front-end JS code still needs to be deployed onto a server because the code needs to be fetched by the browser from somewhere. Unlike a back-end server, a front-end server doesn't run the code, but it does _host_ the code to pass along to the user's browser so the browser can receive the code and run it.
+
+### !end-callout
+
 ### JS file/module management
 As we learned in the pure JavaScript curriculum, the browser will only be able to download and run your JavaScript code if you include a `<script>` tag for each file somewhere in the HTML code. And the order of those tags is important because the code will be run in exactly that order.
 
@@ -41,13 +50,15 @@ This can be accomplished with "minifier" tools such as [UglifyJS](https://github
 Regardless of the techniques used the goal is always the same: Generate valid JavaScript code which behaves exactly the same as your source code, but requires fewer characters to represent. Usually this generated code is not readable by humans.
 
 ## Tools in the modern JS ecosystem
-* [npm](https://npmjs.com/) - Node Package Manager
+* [npm](https://npmjs.com/) - Node Package Manager and [yarn](https://yarnpkg.com/)
 
   npm is the equivalent, for Node, of Ruby's RubyGems and Bundler projects. Its job is to provide access to a registry of existing open-source software (known as packages) and allow a project to specify which packages it depends upon.
 
   npm can be used on the commandline to perform various tasks, including installing all dependencies, adding new dependencies, and running pre-defined script commands (ala Rake).
 
   While npm was originally designed to work with Node for JavaScript that would run in the terminal (on your development machine or a server somwhere, like on Heroku), other tools in the build system have been created which allow us to now seamlessly use npm packages for our client-side JS projects as well.
+
+  yarn is a tool build by Facebook more recently that does all the same work npm does but does it more efficiently, so it is often used in place of npm in modern JS applications.
 
 * [webpack](https://webpack.js.org/) - Module Bundler
 
@@ -59,7 +70,7 @@ Regardless of the techniques used the goal is always the same: Generate valid Ja
 
 * [Babel](https://babeljs.io/) - JavaScript compiler
 
-  Babel's job is to take JavaScript code written in a [newer version of JavaScript](https://babeljs.io/learn-es2015/) (known as ES6 or ES2015) and convert it to equivalent code in an older version of JavaScript (generally ES5) which has more universal support in web browsers.
+  Not everyone uses modern browsers (Internet Explorer 9 for example), so… Babel lets you write your code in modern JS and converts it to support older browsers. Babel's job is to take JavaScript code written in a [newer version of JavaScript](https://babeljs.io/learn-es2015/) (known as ES6 or ES2015) and convert it to equivalent code in an older version of JavaScript (generally ES5) which has more universal support in web browsers. 
 
   Babel is often used as the first stage by webpack when it processes your JS code files, followed possibly by minification and other transformations.
 
@@ -75,7 +86,11 @@ Regardless of the techniques used the goal is always the same: Generate valid Ja
 
 * [Create React App](https://github.com/facebook/create-react-app)
 
-  Create React App is a tool that can be used to generate a project scaffold, specifically for a React project. This ties in with the JS scosystem because part of the scaffold that gets generated is a very thorough and well thought-out build system and configuration. All of the tools mentioned above are included in that system, for example.
+  Create React App is a tool that can be used to generate a project scaffold, specifically for a React project. This ties in with the JS ecosystem because part of the scaffold that gets generated is a very thorough and well thought-out build system and configuration. All of the tools mentioned above are included in that system, for example.
+
+  Here is a visual example of how Create React App orchestrates some of the tools we've discussed to all work together in a client-side JS application. Note that for all the React projects we've been working with, this has been happening without us needing to know much about it.
+
+  ![Create React App Flow Diagram](images/cra-flow.png)
 
   If you would like more detail on the build system and configuration used by Create React App, [check out our resource](cra-build-system.md) on "ejecting" the configuration from a CRA-generated scaffold.
 
