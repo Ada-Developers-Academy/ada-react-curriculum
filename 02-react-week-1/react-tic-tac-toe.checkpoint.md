@@ -13,7 +13,7 @@ Lets play a Game!  In this project you will practice using state & props creatin
 * type: testable-project
 * id: 45b4026d-ffa9-4054-8400-0a99a864facd
 * title: Tic Tac Toe
-* upstream: https://github.com/ada-c14/react-tic-tac-toe
+* upstream: https://github.com/Ada-Review-Test/react-tic-tac-toe
 * validate_fork: false
 * points: 0
 * topics: react
